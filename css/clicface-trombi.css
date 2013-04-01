@@ -1,0 +1,42 @@
+.clicface-trombi-table td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.clicface-trombi-table td a img {
+	border: none;
+}
+
+.clicface-trombi-collaborateur {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.clicface-trombi-collaborateur-contenu {
+	text-align: center;
+	width: 100%;
+}
+
+.clicface-trombi-collaborateur-contenu-table {
+	border: none;
+	margin: 0 auto;
+}
+
+.clicface-trombi-collaborateur-contenu-table td {
+	vertical-align: top;
+	border: none;
+}
+
+#promote-clicface-trombi li {
+	padding-left:20px;
+	list-style-type: none;
+}
+
+#promote-clicface-trombi #twitter {
+	background:url(sprite.png) -10px -746px no-repeat transparent;
+}
+
+#promote-clicface-trombi #star {
+	background:url(sprite.png) -10px -710px no-repeat transparent;
+}

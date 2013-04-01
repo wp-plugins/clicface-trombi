@@ -1,0 +1,237 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Clicface Trombi\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-27 15:12+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Jeriel B.\n"
+"Language-Team:  <contact@clicface.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi\n"
+"X-Poedit-SearchPath-1: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std\n"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/clicface-trombi.php:26
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/clicface-trombi.php:33
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:26
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:33
+msgid "Employee"
+msgstr "Collaborateur"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/clicface-trombi.php:34
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:34
+msgid "Author"
+msgstr "Créateur"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/clicface-trombi.php:54
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:57
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:54
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:57
+msgid "Division"
+msgstr "Service"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/clicface-trombi.php:74
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:74
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:74
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:74
+msgid "Worksite"
+msgstr "Site de travail"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/clicface-trombi.php:93
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:109
+msgid "You can't create any more record, you have already reached the limit. You have to update your Clicface Trombi plugin version to add more records."
+msgstr "Vous ne pouvez pas créer de nouvelles fiches, vous avez déjà atteint la limite. Vous devez mettre à la jour la version de Clicface Trombi pour pouvoir ajouter de nouvelles fiches."
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/clicface-trombi.php:155
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:213
+msgid "Division:"
+msgstr "Service :"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/includes/class-piklist-checker.php:51
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/includes/class-piklist-checker.php:51
+msgid "Piklist Required."
+msgstr "Piklist est requis."
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/includes/class-piklist-checker.php:53
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/includes/class-piklist-checker.php:53
+msgid "The plugin(s) listed below require the Piklist plugin to be installed and activated."
+msgstr "Les plugins listés ci-dessous ne peuvent fonctionner que si Piklist est installé et activé."
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/includes/class-piklist-checker.php:54
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/includes/class-piklist-checker.php:54
+msgid "You can:"
+msgstr "Vous pouvez :"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/includes/class-piklist-checker.php:70
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/includes/class-piklist-checker.php:70
+msgid "The following plugin(s) have been deactivated."
+msgstr "Les plugins suivants ont été désactivés."
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/includes/class-collaborateur.php:93
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/includes/class-collaborateur.php:93
+msgid "An error occured for the employee"
+msgstr "Une erreur est survenue pour le collaborateur"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/templates/single-collaborateur.php:25
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/templates/single-collaborateur-std.php:30
+msgid "Phone:"
+msgstr "Tél.:"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/templates/single-collaborateur.php:28
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/templates/single-collaborateur-std.php:33
+msgid "Cell:"
+msgstr "Port.:"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/templates/single-collaborateur.php:31
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/templates/single-collaborateur-std.php:36
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/help.php:16
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/help.php:16
+msgid "Clicface Trombi Support"
+msgstr "Support Clicface Trombi"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/help.php:26
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/help.php:26
+msgid "Help Promote Clicface Trombi"
+msgstr "Aidez à promouvoir Clicface Trombi"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/help.php:28
+msgid "Get QR Code Feature, Search Function, Personnalized Fields and Org Chart"
+msgstr "Activez les QR Codes, la recherche, les champs personnalisés et les organigrammes"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/help.php:29
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/help.php:28
+msgid "Follow us on Twitter:"
+msgstr "Suivez-nous sur Twitter :"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/help.php:30
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/help.php:29
+msgid "Rate Clicface Trombi on WordPress.org"
+msgstr "Notez Clicface Trombi sur WordPress.org"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:13
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:13
+msgid "Last Name"
+msgstr "Nom"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:19
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:19
+msgid "First Name"
+msgstr "Prénom"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:25
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:25
+msgid "E-mail"
+msgstr "E-mail"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:34
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:34
+msgid "Active"
+msgstr "Activé"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:35
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:35
+msgid "Display the employee in the trombinoscope"
+msgstr "Affiche le collaborateur dans le trombinoscope"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:39
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:39
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:24
+msgid "Yes"
+msgstr "Oui"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:40
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:40
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:25
+msgid "No"
+msgstr "Non"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:47
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:47
+msgid "Function"
+msgstr "Fonction"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:58
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:58
+msgid "Employee's Division"
+msgstr "Service du collaborateur"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:89
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:89
+msgid "Landline Number"
+msgstr "Téléphone fixe"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:95
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:95
+msgid "Mobile Number"
+msgstr "Téléphone portable"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:101
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:101
+msgid "Comments"
+msgstr "Commentaires"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:136
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:136
+msgid "Permanently delete the picture"
+msgstr "Supprimer définitivement la photo"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi/parts/meta-boxes/champs-collaborateur.php:147
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:147
+msgid "Picture"
+msgstr "Photo"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:88
+msgid "Clicface Trombi Standard Settings"
+msgstr "Paramètres de Clicface Trombi"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:158
+msgid "Select a Division"
+msgstr "Sélectionner un service"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:162
+msgid "Display all"
+msgstr "Tout afficher"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:162
+msgid "employees"
+msgstr "collaborateurs"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:167
+msgid "Show only:"
+msgstr "Service affiché :"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:171
+msgid "All divisions are displayed"
+msgstr "Tous les services sont affichés"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:180
+msgid "Search by name:"
+msgstr "Recherche par nom :"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/templates/single-collaborateur-std.php:43
+msgid "Scan this QR Code to immediately add the contact to your phonebook:"
+msgstr "Scannez le QR Code pour ajouter immédiatement le contact à votre répertoire téléphonique :"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:11
+msgid "Number of employees per page"
+msgstr "Nombre de collaborateurs par page"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:21
+msgid "QR Code Display"
+msgstr "Affichage du QR Code"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:32
+msgid "QR Code Color"
+msgstr "Couleur du QR Code"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:34
+msgid "Click to pick a color."
+msgstr "Cliquer pour choisir une couleur."
+
