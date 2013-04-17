@@ -168,7 +168,26 @@ function trombi_display_views() {
 	$the_query = new WP_Query($args);
 	$clicface_trombi_settings = get_option('clicface_trombi_settings');
 	switch($clicface_trombi_settings['trombi_affichage_type']) {
-		case 'grid':
+		case 'list':
+			echo '<table class="clicface-trombi-table">';
+			echo '<tr><td colspan="2" style="border: none;"><hr></td></tr>';
+			while ( $the_query->have_posts() ) : $the_query->the_post();
+				$collaborateur = new clicface_Collaborateur( get_the_ID() );
+				echo '<tr><td style="border: none;">';
+				echo '<a class="clicface-trombi-collaborateur" href="'. $collaborateur->Link .'" target="_blank"><div>';
+				echo '<strong>' . $collaborateur->Nom . '</strong><br />';
+				echo '<i>' . $collaborateur->Fonction . '</i><br /><br />';
+				echo '<u>' . __('Division:', 'clicface-trombi') . '</u><br />' . $collaborateur->Service;
+				echo '</div></a>';
+				echo '</td><td style="border: none;">';
+				echo $collaborateur->PhotoThumbnail;
+				echo '</td></tr>';
+				echo '<tr><td colspan="2" style="border: none;"><hr></td></tr>';
+			endwhile;
+			echo '</table>';
+		break;
+		
+		default: //grid
 			$i = 1;
 			echo '<table class="clicface-trombi-table">';
 			echo '<tr>';
@@ -186,25 +205,6 @@ function trombi_display_views() {
 					echo '</tr><tr>';
 				}
 				$i++;
-			endwhile;
-			echo '</table>';
-		break;
-		
-		default:
-			echo '<table class="clicface-trombi-table">';
-			echo '<tr><td colspan="2" style="border: none;"><hr></td></tr>';
-			while ( $the_query->have_posts() ) : $the_query->the_post();
-				$collaborateur = new clicface_Collaborateur( get_the_ID() );
-				echo '<tr><td style="border: none;">';
-				echo '<a class="clicface-trombi-collaborateur" href="'. $collaborateur->Link .'" target="_blank"><div>';
-				echo '<strong>' . $collaborateur->Nom . '</strong><br />';
-				echo '<i>' . $collaborateur->Fonction . '</i><br /><br />';
-				echo '<u>' . __('Division:', 'clicface-trombi') . '</u><br />' . $collaborateur->Service;
-				echo '</div></a>';
-				echo '</td><td style="border: none;">';
-				echo $collaborateur->PhotoThumbnail;
-				echo '</td></tr>';
-				echo '<tr><td colspan="2" style="border: none;"><hr></td></tr>';
 			endwhile;
 			echo '</table>';
 		break;
