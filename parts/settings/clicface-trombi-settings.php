@@ -19,7 +19,7 @@ piklist('field', array(
 piklist('field', array(
 	'type' => 'number'
 	,'field' => 'trombi_collaborateurs_par_ligne'
-	,'label' => __('Number of employees per line<br />(for Grid display)', 'clicface-trombi')
+	,'label' => __('Number of employees per line', 'clicface-trombi') . '<br />' . __('(for Grid display)', 'clicface-trombi')
 	,'value' => 3
 	,'attributes' => array(
 		'class' => 'small-text'
@@ -29,9 +29,9 @@ piklist('field', array(
 piklist('field', array(
 	'type' => 'colorpicker'
 	,'field' => 'vignette_color_border'
-	,'label' => __('Border Color<br />(for Grid display)', 'clicface-trombi')
+	,'label' => __('Border Color', 'clicface-trombi') . '<br />' . __('(for Grid display)', 'clicface-trombi')
 	,'value' => '#B5D9EA'
-	,'description' => __('Click to pick a color. Default color: ', 'clicface-trombi') . '#B5D9EA'
+	,'description' => __('Click to pick a color.', 'clicface-trombi') . ' ' . __('Default color:', 'clicface-trombi') . ' #B5D9EA'
 	,'attributes' => array(
 		'class' => 'text'
 	)
@@ -41,9 +41,9 @@ piklist('field', array(
 piklist('field', array(
 	'type' => 'colorpicker'
 	,'field' => 'vignette_color_background_top'
-	,'label' => __('Background Top Color<br />(for Grid display)', 'clicface-trombi')
+	,'label' => __('Top Background Color', 'clicface-trombi') . '<br />' . __('(for Grid display)', 'clicface-trombi')
 	,'value' => '#EDF7FF'
-	,'description' => __('Click to pick a color. Default color: ', 'clicface-trombi') . '#EDF7FF'
+	,'description' => __('Click to pick a color.', 'clicface-trombi') . ' ' . __('Default color:', 'clicface-trombi') . ' #EDF7FF'
 	,'attributes' => array(
 		'class' => 'text'
 	)
@@ -53,9 +53,9 @@ piklist('field', array(
 piklist('field', array(
 	'type' => 'colorpicker'
 	,'field' => 'vignette_color_background_bottom'
-	,'label' => __('Background Top Color<br />(for Grid display)', 'clicface-trombi')
+	,'label' => __('Bottom Background Color', 'clicface-trombi') . '<br />' . __('(for Grid display)', 'clicface-trombi')
 	,'value' => '#CDE7EE'
-	,'description' => __('Click to pick a color. Default color: ', 'clicface-trombi') . '#CDE7EE'
+	,'description' => __('Click to pick a color.', 'clicface-trombi') . ' ' . __('Default color:', 'clicface-trombi') . ' #CDE7EE'
 	,'attributes' => array(
 		'class' => 'text'
 	)
