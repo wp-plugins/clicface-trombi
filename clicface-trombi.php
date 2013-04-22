@@ -28,7 +28,11 @@ function clicface_trombi_init_function() {
 add_filter('piklist_post_types', 'piklist_collaborateur_post_types');
 function piklist_collaborateur_post_types($post_types) {
 	$post_types['collaborateur'] = array(
-			'labels' => piklist('post_type_labels', __('Employee', 'clicface-trombi'))
+			'labels' => array(
+				'name' => __('Employees', 'clicface-trombi')
+				,'singular_name' => __('Employee', 'clicface-trombi')
+				,'add_new' => __('Add New Employee', 'clicface-trombi')
+			)
 			,'public' => true
 			,'rewrite' => array(
 				'slug' => 'collaborateur'
@@ -56,7 +60,11 @@ function piklist_collaborateur_services($taxonomies) {
 		,'hide_meta_box' => true
 		,'configuration' => array(
 			'hierarchical' => false
-			,'labels' => piklist('taxonomy_labels', __('Division', 'clicface-trombi'))
+			,'labels' => array(
+				'name' => __('Divisions', 'clicface-trombi')
+				,'singular_name' => __('Division', 'clicface-trombi')
+				,'add_new' => __('Add New Division', 'clicface-trombi')
+			)
 			,'show_ui' => true
 			,'query_var' => true
 			,'rewrite' => array(
@@ -76,7 +84,11 @@ function piklist_collaborateur_worksites($taxonomies) {
 		,'hide_meta_box' => true
 		,'configuration' => array(
 			'hierarchical' => false
-			,'labels' => piklist('taxonomy_labels', __('Worksite', 'clicface-trombi'))
+			,'labels' => array(
+				'name' => __('Worksites', 'clicface-trombi')
+				,'singular_name' => __('Worksite', 'clicface-trombi')
+				,'add_new' => __('Add New Worksite', 'clicface-trombi')
+			)
 			,'show_ui' => true
 			,'query_var' => true
 			,'rewrite' => array(
