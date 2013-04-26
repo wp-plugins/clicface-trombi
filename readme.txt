@@ -4,7 +4,7 @@ Donate link: http://www.clicface.com/
 Tags: online directory, directory, employee, employee list, employees, staff, staff directory, staff list, business directory, member directory, trombinoscope, org chart
 Requires at least: 2.9.2
 Tested up to: 3.5.1
-Stable tag: 1.02
+Stable tag: 1.03
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,8 @@ Inside the article or page you want, insert the code below in the HTML tab. The 
 = What are the requirements to install the Clicface Trombi plugin? =
 To use Clicface Trombi, you must first install the [Piklist plugin](http://wordpress.org/extend/plugins/piklist/). Piklist is a Framework for WordPress that we used to develop Clicface Trombi. Piklist is free and open source.
 
+You can check more FAQ [on our website](http://www.clicface.com/faq).
+
 = What languages are available for Clicface Trombi? =
 Languages currently available are:
 
@@ -78,9 +80,19 @@ If you need help, feel free to contact us using the [Support Ticket System](http
 Screenshots are available on the [Clicface Trombi plugin website](http://www.clicface.com/screenshots).
 
 == Changelog ==
+= 1.03 =
+* Adding the choice to open the staff person's details in the same window, a new window or a lightbox
+* Adding an option to add a link to the previous page on the staff person's detail page
+* Adding an option to move the page to the content on each employee's page
+* Improving the setting page
+
 = 1.02 =
 * Adding grid display with custom colors
 * Adding lines between employees for better readability (list display)
 
 = 1.01 =
 * Initial import
+
+== Upgrade Notice ==
+= 1.03 =
+Please revalidate all the settings in the Clicface Trombi tab of the Admin Section to take into account all new settings.

@@ -55,35 +55,16 @@ class clicface_Collaborateur {
 				remove_all_filters('get_the_excerpt'); // Since we're using the_excerpt for notes, we need to keep it clean.
 				foreach ( $attachments as $post ) {
 					setup_postdata($post);
-					$this->PhotoThumbnail = '<div id="pik_post_attachment_' . $post->ID . '" class="piklist-field-container">';
-					$this->PhotoThumbnail .= '<div class="piklist-label-container"><a href="' . $this->Link . '" target="_blank">' . wp_get_attachment_image( $post->ID, 'thumbnail', false, true ) . '</a></div>';
-					$this->PhotoThumbnail .= '</div>';
+					$this->PhotoThumbnail = wp_get_attachment_image( $post->ID, 'thumbnail', false );
 					
 					$this->PhotoLarge = '<div id="pik_post_attachment_' . $post->ID . '" class="piklist-field-container">';
-					$this->PhotoLarge .= '<div class="piklist-label-container">' . wp_get_attachment_image( $post->ID, 'large', false, true ) . '</div>';
+					$this->PhotoLarge .= '<div class="piklist-label-container">' . wp_get_attachment_image( $post->ID, 'large', false ) . '</div>';
 					$this->PhotoLarge .= '</div>';
 				}
 			} else {
 				$this->PhotoThumbnail = '-';
 				$this->PhotoLarge = NULL;
 			}
-			
-			// QR Code
-			$this->QRCode = <<<EOF
-BEGIN:VCARD
-VERSION:3.0
-N:$this->Nom
-FN:$this->Nom
-TITLE:$this->Fonction
-TEL;TYPE=WORK,VOICE:$this->TelephoneFixe
-TEL;TYPE=CELL,VOICE:$this->TelephonePortable
-EMAIL;TYPE=PREF,INTERNET:$this->Mail
-END:VCARD
-EOF;
-			$this->QRCode =  str_replace('&rsquo;', '\'', $this->QRCode);
-			$this->QRCode =  addslashes($this->QRCode);
-			$this->QRCode =  utf8_encode($this->QRCode);
-			$this->QRCode = str_replace(array("\r\n", "\r", "\n"), '\n', $this->QRCode);
 			
 			$this->Erreur = false;
 			return true;

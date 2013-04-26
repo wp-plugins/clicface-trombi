@@ -1,12 +1,8 @@
-<?php
-// We'll be outputting CSS
-header('Content-type: text/css');
-require_once('../../../../wp-load.php');
-$clicface_trombi_settings = get_option('clicface_trombi_settings');
-?>
 .clicface-trombi-table,
 .clicface-trombi-table td a img {
 	border: none !important;
+	border-spacing: 15px;
+	margin: 3px;
 }
 
 .clicface-trombi-table td {
@@ -17,10 +13,7 @@ $clicface_trombi_settings = get_option('clicface_trombi_settings');
 .clicface-trombi-cellule {
 	width: 250px;
 	font-size: 13px;
-	background-color: <?php echo $clicface_trombi_settings['vignette_color_background_top']; ?>;
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(<?php echo $clicface_trombi_settings['vignette_color_background_top']; ?>), to(<?php echo $clicface_trombi_settings['vignette_color_background_bottom']; ?>));
 	border-radius: 8px;
-	border: 2px solid <?php echo $clicface_trombi_settings['vignette_color_border']; ?>;
 	color: #000000;
 	-moz-border-radius: 6px;
 	-webkit-border-horizontal-spacing: 0px;
