@@ -16,6 +16,17 @@ piklist('field', array(
 	)
 ));
 
+
+piklist('field', array(
+	'type' => 'number'
+	,'field' => 'trombi_collaborateurs_par_ligne'
+	,'label' => __('Number of employees per line', 'clicface-trombi') . '<br />' . __('(for Grid display)', 'clicface-trombi')
+	,'value' => 3
+	,'attributes' => array(
+		'class' => 'small-text'
+	)
+));
+
 piklist('field', array(
 	'type' => 'radio'
 	,'field' => 'trombi_target_window'
@@ -49,15 +60,5 @@ piklist('field', array(
 	,'choices' => array(
 		'oui' => __('Yes', 'clicface-trombi')
 		,'non' => __('No', 'clicface-trombi')
-	)
-));
-
-piklist('field', array(
-	'type' => 'number'
-	,'field' => 'trombi_collaborateurs_par_ligne'
-	,'label' => __('Number of employees per line', 'clicface-trombi') . '<br />' . __('(for Grid display)', 'clicface-trombi')
-	,'value' => 3
-	,'attributes' => array(
-		'class' => 'small-text'
 	)
 ));

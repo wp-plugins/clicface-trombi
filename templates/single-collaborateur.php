@@ -2,6 +2,7 @@
 
 require_once( plugin_dir_path(__FILE__) . '../includes/class-collaborateur.php' );
 $collaborateur = new clicface_Collaborateur( get_the_ID() );
+
 $clicface_trombi_settings = get_option('clicface_trombi_settings');
 
 if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {

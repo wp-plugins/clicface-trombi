@@ -2,7 +2,7 @@
 /*
 Plugin Name: Clicface Trombi
 Plugin URI: http://www.clicface.com/
-Description: A is a great plugin for WordPress that creates a directory of all your employees.
+Description: A great plugin for WordPress that creates a directory of all your employees.
 Version: 1.03
 Author: Clicface
 Author URI: http://www.clicface.com/
@@ -169,6 +169,7 @@ function wpse_57232_render_cpt( $template ) {
 
 add_shortcode( 'clicface-trombi', 'trombi_display_views' );
 function trombi_display_views() {
+	$clicface_trombi_settings = get_option('clicface_trombi_settings');
 	wp_enqueue_style('clicface-trombi-style');
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-ui-dialog');
@@ -181,7 +182,6 @@ function trombi_display_views() {
 			'order' => 'ASC'
 		);
 	$the_query = new WP_Query($args);
-	$clicface_trombi_settings = get_option('clicface_trombi_settings');
 	
 	switch($clicface_trombi_settings['trombi_target_window']) {
 		case 'thickbox':
