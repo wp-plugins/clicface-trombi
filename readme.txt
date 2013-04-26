@@ -23,6 +23,7 @@ Features: (depending on the version)
 
 * Easy integration
 * Grid or List Display
+* Show employee's details in a new window or a lightbox
 * Custom Colors
 * QR Code
 * Search Function & Exposed Filters
@@ -60,8 +61,6 @@ Inside the article or page you want, insert the code below in the HTML tab. The 
 = What are the requirements to install the Clicface Trombi plugin? =
 To use Clicface Trombi, you must first install the [Piklist plugin](http://wordpress.org/extend/plugins/piklist/). Piklist is a Framework for WordPress that we used to develop Clicface Trombi. Piklist is free and open source.
 
-You can check more FAQ [on our website](http://www.clicface.com/faq).
-
 = What languages are available for Clicface Trombi? =
 Languages currently available are:
 
@@ -75,6 +74,8 @@ To use customized fields with Clicface Trombi, we suggest you to choose the best
 
 = I can not run the plugin. Where can I find help? =
 If you need help, feel free to contact us using the [Support Ticket System](http://support.clicface.com/). You can also post a question on [the WordPress forum dedicated to the plugin](http://wordpress.org/tags/clicface-trombi?forum_id=10).
+
+*You can check more FAQ [on our website](http://www.clicface.com/faq).*
 
 == Screenshots ==
 Screenshots are available on the [Clicface Trombi plugin website](http://www.clicface.com/screenshots).
