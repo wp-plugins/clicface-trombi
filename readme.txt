@@ -1,10 +1,10 @@
 === Clicface Trombi ===
 Contributors: clicface
 Donate link: http://www.clicface.com/
-Tags: online directory, directory, trombinoscope, org chart
+Tags: online directory, directory, employee, employee list, employees, staff, staff directory, staff list, business directory, member directory, trombinoscope, org chart
 Requires at least: 2.9.2
 Tested up to: 3.5.1
-Stable tag: 1.01
+Stable tag: 1.02
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,8 @@ Clicface Trombi is the solution to easily publish the directory of an organizati
 Features: (depending on the version)
 
 * Easy integration
+* Grid or List Display
+* Custom Colors
 * QR Code
 * Search Function & Exposed Filters
 * Clicface Organi, the Org Chart web application
@@ -76,5 +78,9 @@ If you need help, feel free to contact us using the [Support Ticket System](http
 Screenshots are available on the [Clicface Trombi plugin website](http://www.clicface.com/screenshots).
 
 == Changelog ==
+= 1.02 =
+* Adding grid display with custom colors
+* Adding lines between employees for better readability (list display)
+
 = 1.01 =
 * Initial import

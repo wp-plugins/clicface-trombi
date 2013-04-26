@@ -32,7 +32,7 @@ piklist('field', array(
 	'type' => 'radio'
 	,'field' => 'actif_trombi'
 	,'label' => __('Active', 'clicface-trombi')
-	,'description' => __('Display the employee in the trombinoscope', 'clicface-trombi')
+	,'description' => __('Display the employee in the directory', 'clicface-trombi')
 	,'value' => 'oui'
 	,'list' => false
 	,'choices' => array(
