@@ -3,7 +3,7 @@
 Plugin Name: Clicface Trombi
 Plugin URI: http://www.clicface.com/
 Description: A great plugin for WordPress that creates a directory of all your employees.
-Version: 1.04
+Version: 1.05
 Author: Clicface
 Author URI: http://www.clicface.com/
 Plugin Type: Piklist
@@ -174,6 +174,7 @@ function trombi_display_views() {
 	wp_enqueue_style('clicface-trombi-style');
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-ui-dialog');
+	$output = '';
 	
 	// query
 	$args = array(
@@ -210,48 +211,49 @@ function trombi_display_views() {
 	
 	switch($clicface_trombi_settings['trombi_affichage_type']) {
 		case 'list':
-			echo '<table class="clicface-trombi-table">';
-			echo '<tr><td colspan="2" style="border: none;"><hr></td></tr>';
+			$output .= '<table class="clicface-trombi-table">';
+			$output .= '<tr><td colspan="2" style="border: none;"><hr></td></tr>';
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 				$collaborateur = new clicface_Collaborateur( get_the_ID() );
-				echo '<tr><td style="border: none;">';
-				echo '<a class="clicface-trombi-collaborateur ' . $ExtraClassTxt .'" href="'. $collaborateur->Link . $ExtraLink .'" target="'. $WindowTarget .'" ' . $ExtraClassImg . '><div>';
-				echo '<strong>' . $collaborateur->Nom . '</strong><br />';
-				echo '<i>' . $collaborateur->Fonction . '</i><br /><br />';
-				echo '<u>' . __('Division:', 'clicface-trombi') . '</u><br />' . $collaborateur->Service;
-				echo '</div></a>';
-				echo '</td><td style="border: none;">';
-				echo '<div class="piklist-label-container"><a href="' . $collaborateur->Link . $ExtraLink .'" target="'. $WindowTarget .'" ' . $ExtraClassImg . '>' . $collaborateur->PhotoThumbnail . '</a></div>';
-				echo '</td></tr>';
-				echo '<tr><td colspan="2" style="border: none;"><hr></td></tr>';
+				$output .= '<tr><td style="border: none;">';
+				$output .= '<a class="clicface-trombi-collaborateur ' . $ExtraClassTxt .'" href="'. $collaborateur->Link . $ExtraLink .'" target="'. $WindowTarget .'" ' . $ExtraClassImg . '><div>';
+				$output .= '<div class="clicface-trombi-employee-name">' . $collaborateur->Nom . '</div>';
+				$output .= '<div class="clicface-trombi-employee-function">' . $collaborateur->Fonction . '</div><br />';
+				$output .= '<u>' . __('Division:', 'clicface-trombi') . '</u><br /><div class="clicface-trombi-employee-service">' . $collaborateur->Service . '</div>';
+				$output .= '</div></a>';
+				$output .= '</td><td style="border: none;">';
+				$output .= '<div class="piklist-label-container"><a href="' . $collaborateur->Link . $ExtraLink .'" target="'. $WindowTarget .'" ' . $ExtraClassImg . '>' . $collaborateur->PhotoThumbnail . '</a></div>';
+				$output .= '</td></tr>';
+				$output .= '<tr><td colspan="2" style="border: none;"><hr></td></tr>';
 			endwhile;
-			echo '</table>';
+			$output .= '</table>';
 		break;
 		
 		default: //grid
 			$i = 1;
-			echo '<style type="text/css">.clicface-trombi-cellule {background-color: ' . $clicface_trombi_settings['vignette_color_background_top'] . '; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(' . $clicface_trombi_settings['vignette_color_background_top'] . '), to(' . $clicface_trombi_settings['vignette_color_background_bottom'] . ')); border: 2px solid ' . $clicface_trombi_settings['vignette_color_border'] . ';}</style>';
-			echo '<table class="clicface-trombi-table">';
-			echo '<tr>';
+			$output .= '<style type="text/css">.clicface-trombi-cellule {background-color: ' . $clicface_trombi_settings['vignette_color_background_top'] . '; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(' . $clicface_trombi_settings['vignette_color_background_top'] . '), to(' . $clicface_trombi_settings['vignette_color_background_bottom'] . ')); border: 2px solid ' . $clicface_trombi_settings['vignette_color_border'] . ';}</style>';
+			$output .= '<table class="clicface-trombi-table">';
+			$output .= '<tr>';
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 				$collaborateur = new clicface_Collaborateur( get_the_ID() );
-				echo '<td class="clicface-trombi-cellule"><div class="clicface-trombi-vignette">';
-				echo '<div class="piklist-label-container"><a href="' . $collaborateur->Link . $ExtraLink . '" target="'. $WindowTarget .'" ' . $ExtraClassImg . '>' . $collaborateur->PhotoThumbnail . '</a></div>';
-				echo '<a class="clicface-trombi-collaborateur ' . $ExtraClassTxt . '" href="' . $collaborateur->Link . $ExtraLink . '" target="'. $WindowTarget .'" ' . $ExtraClassImg . '><div>';
-				echo '<strong>' . $collaborateur->Nom . '</strong><br />';
-				echo '<i>' . $collaborateur->Fonction . '</i><br />';
-				echo $collaborateur->Service;
-				echo '</div></a>';
-				echo '</div></td>';
+				$output .= '<td class="clicface-trombi-cellule"><div class="clicface-trombi-vignette">';
+				$output .= '<div class="piklist-label-container"><a href="' . $collaborateur->Link . $ExtraLink . '" target="'. $WindowTarget .'" ' . $ExtraClassImg . '>' . $collaborateur->PhotoThumbnail . '</a></div>';
+				$output .= '<a class="clicface-trombi-collaborateur ' . $ExtraClassTxt . '" href="' . $collaborateur->Link . $ExtraLink . '" target="'. $WindowTarget .'" ' . $ExtraClassImg . '><div>';
+				$output .= '<div class="clicface-trombi-employee-name">' . $collaborateur->Nom . '</div>';
+				$output .= '<div class="clicface-trombi-employee-function">' . $collaborateur->Fonction . '</div>';
+				$output .= '<div class="clicface-trombi-employee-service">' . $collaborateur->Service . '</div>';
+				$output .= '</div></a>';
+				$output .= '</div></td>';
 				if ( $i % $clicface_trombi_settings['trombi_collaborateurs_par_ligne'] == 0) {
-					echo '</tr><tr>';
+					$output .= '</tr><tr>';
 				}
 				$i++;
 			endwhile;
-			echo '</table>';
+			$output .= '</table>';
 		break;
 	}
 	wp_reset_postdata();
+	return $output;
 }
 
 add_action( 'admin_menu' , 'remove_fonction_meta' );

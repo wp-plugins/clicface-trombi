@@ -1,3 +1,17 @@
+.clicface-trombi-employee-name {
+  font-weight: bold;
+}
+
+.clicface-trombi-employee-function {
+  font-style: italic;
+}
+
+.clicface-trombi-employee-service {
+  
+}
+
+
+/* DO NOT EDIT THIS PART! */
 .clicface-trombi-table,
 .clicface-trombi-table td a img {
   border: none !important;

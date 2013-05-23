@@ -34,9 +34,9 @@ if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 					<table class="clicface-trombi-collaborateur-contenu-table">
 						<tr>
 							<td>
-								<strong><?php echo $collaborateur->Nom; ?></strong><br />
-								<?php echo $collaborateur->Fonction; ?><br />
-								<i><?php echo $collaborateur->Service; ?></i><br /><br />
+								<div class="clicface-trombi-employee-name"><?php echo $collaborateur->Nom; ?></div>
+								<div class="clicface-trombi-employee-function"><?php echo $collaborateur->Fonction; ?></div>
+								<div class="clicface-trombi-employee-service"><?php echo $collaborateur->Service; ?></div><br />
 								<?php if( $collaborateur->TelephoneFixe != NULL ): ?>
 									<?php _e('Phone:', 'clicface-trombi'); ?> <?php echo $collaborateur->TelephoneFixe; ?><br />
 								<?php endif; ?>
