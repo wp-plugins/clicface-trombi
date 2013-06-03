@@ -130,7 +130,7 @@ if ($attachments) {
 		setup_postdata($post); ?>
 			<div id="pik_post_attachment_<?php echo $post->ID; ?>" class="piklist-field-container">
 				<div class="piklist-label-container">
-					<?php echo wp_get_attachment_link( $attachment->ID, 'thumbnail', false, true ); ?>
+					<?php echo wp_get_attachment_link( $post->ID, 'thumbnail', false, true ); ?>
 				</div>
 				<div class="piklist-field">
 					<a href="<?php echo wp_nonce_url( "/wp-admin/post.php?action=delete&amp;post=$post->ID", 'delete-post_' . $post->ID ) ?>"><?php _e('Permanently delete the picture', 'clicface-trombi'); ?></a>
