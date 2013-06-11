@@ -14,7 +14,7 @@ require_once( plugin_dir_path(__FILE__) . 'includes/class-collaborateur.php' );
 
 add_action('init', 'clicface_trombi_init');
 function clicface_trombi_init(){
-	load_plugin_textdomain('clicface-trombi', false, '/wp-content/plugins/clicface-trombi/i18n/');
+	load_plugin_textdomain('clicface-trombi', false, dirname( plugin_basename( __FILE__ ) ) . '/i18n/');
 	wp_register_style( 'clicface-trombi-style', plugins_url('clicface-trombi/css/clicface-trombi.css') );
 }
 

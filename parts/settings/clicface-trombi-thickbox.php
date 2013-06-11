@@ -20,7 +20,7 @@ piklist('field', array(
 	'type' => 'number'
 	,'field' => 'trombi_thickbox_height'
 	,'label' => __('Height (in pixels)', 'clicface-trombi')
-	,'value' => 650
+	,'value' => 670
 	,'attributes' => array(
 		'class' => 'small-text'
 	)
