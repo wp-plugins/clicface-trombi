@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clicface Trombi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-11 15:26+0100\n"
-"PO-Revision-Date: 2013-06-11 15:27+0100\n"
+"POT-Creation-Date: 2013-06-11 17:55+0100\n"
+"PO-Revision-Date: 2013-06-11 17:56+0100\n"
 "Last-Translator: Jeriel B. <jeriel@clicface.com>\n"
 "Language-Team:  <contact@clicface.com>\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr "Ajouter un nouveau collaborateur"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_svn_wordpress_clicface_trombi/trunk/clicface-trombi.php:44
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:44
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:54
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:57
 msgid "Author"
 msgstr "Créateur"
 
@@ -79,7 +79,7 @@ msgstr "Paramètres de Clicface Trombi"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_svn_wordpress_clicface_trombi/trunk/clicface-trombi.php:113
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:113
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:75
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:78
 msgid "General"
 msgstr "Général"
 
@@ -176,31 +176,26 @@ msgstr "Nombre de collaborateurs par ligne"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_svn_wordpress_clicface_trombi/trunk/parts/settings/clicface-trombi-settings.php:33
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:75
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:55
 msgid "Target of the links"
 msgstr "Cible des liens"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_svn_wordpress_clicface_trombi/trunk/parts/settings/clicface-trombi-settings.php:36
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:78
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:58
 msgid "New Window"
 msgstr "Nouvelle fenêtre"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_svn_wordpress_clicface_trombi/trunk/parts/settings/clicface-trombi-settings.php:37
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:79
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:59
 msgid "Same Window"
 msgstr "Même fenêtre"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_svn_wordpress_clicface_trombi/trunk/parts/settings/clicface-trombi-settings.php:45
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:87
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:67
 msgid "Display a link to the previous page"
 msgstr "Afficher un lien vers la page précédente"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_svn_wordpress_clicface_trombi/trunk/parts/settings/clicface-trombi-settings.php:47
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:89
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:69
 msgid "A link to the previous page can be displayed on each employee's page."
 msgstr ""
 "Un lien vers la page précédente peut être affiché sur la page de chaque "
@@ -221,8 +216,6 @@ msgstr ""
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:25
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:36
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:47
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:71
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:83
 msgid "Yes"
 msgstr "Oui"
 
@@ -241,20 +234,16 @@ msgstr "Oui"
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:26
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:37
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:48
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:72
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:84
 msgid "No"
 msgstr "Non"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_svn_wordpress_clicface_trombi/trunk/parts/settings/clicface-trombi-settings.php:57
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:99
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:79
 msgid "Move the page to the content on each employee's page"
 msgstr "Atteindre automatiquement le contenu de la page d'un collaborateur"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_svn_wordpress_clicface_trombi/trunk/parts/settings/clicface-trombi-settings.php:59
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/parts/settings/clicface-trombi-settings.php:101
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:81
 msgid ""
 "This option is useful when you have a big header on your website and you "
 "want to avoid visitors to scroll down to the content on each employee's page."
@@ -394,7 +383,7 @@ msgstr "Retourner à la page précédente"
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:337
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:370
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/templates/single-collaborateur-std.php:45
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:318
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:339
 msgid "Phone:"
 msgstr "Tél.:"
 
@@ -402,7 +391,7 @@ msgstr "Tél.:"
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:340
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:373
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/templates/single-collaborateur-std.php:48
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:321
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:342
 msgid "Cell:"
 msgstr "Port.:"
 
@@ -453,7 +442,7 @@ msgid "Print this page"
 msgstr "Imprimer cette page"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:523
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:514
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:535
 msgid ""
 "An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
 "\" onclick=\"document.location.reload(); return false;\">Try again</a>"
@@ -462,7 +451,7 @@ msgstr ""
 "\"document.location.reload(); return false;\">Essayez à nouveau</a>"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-trombi-std/clicface-trombi-std.php:528
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:519
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:540
 msgid "An unknown error occurred"
 msgstr "Une erreur inconnue s'est produite"
 
@@ -561,28 +550,28 @@ msgstr ""
 "Scannez le QR Code pour ajouter immédiatement le contact à votre répertoire "
 "téléphonique :"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:42
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:45
 msgid "Org Charts"
 msgstr "Organigrammes"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:43
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:52
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:46
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:55
 msgid "Org Chart"
 msgstr "Organigramme"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:44
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:47
 msgid "Add New Org Chart"
 msgstr "Ajouter un nouvel organigramme"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:53
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:56
 msgid "Shortcode to copy"
 msgstr "Shortcode à copier"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:68
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:71
 msgid "Clicface Organi Standard Settings"
 msgstr "Paramètres de Clicface Organi"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:89
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:92
 msgid ""
 "You can't create any more record, you have already reached the limit. You "
 "have to update your Clicface Organi plugin version to add more records."
@@ -591,43 +580,43 @@ msgstr ""
 "limite. Vous devez mettre à la jour la version de Clicface Organi pour "
 "pouvoir ajouter de nouvelles fiches."
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:184
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:205
 msgid "Error: The id argument has not been provided."
 msgstr "Erreur : l'argument id n'a pas été renseigné."
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:189
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:210
 msgid "Error: The id argument does not correspond to an org chart."
 msgstr "Erreur : l'argument id ne correspond pas à un organigramme."
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:238
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:259
 msgid "Error: No employees found."
 msgstr "Erreur : aucun collaborateur trouvé."
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:243
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:264
 msgid "Add an Employee in this Org Chart"
 msgstr "Ajouter un collaborateur à l'organigramme"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:244
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:265
 msgid "Switch Boss"
 msgstr "Modifier le chef"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:245
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:266
 msgid "Reload page"
 msgstr "Rafraîchir la page"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:249
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:270
 msgid "Select an Employee to add"
 msgstr "Sélectionner un collaborateur à ajouter"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:254
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:275
 msgid "Add"
 msgstr "Ajouter"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:328
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:349
 msgid "employee removed"
 msgstr "collaborateur supprimé"
 
-#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:350
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/clicface-organi-std.php:371
 msgid ""
 "You are about to remove this item from the org chart. All subordinate "
 "elements will also be removed from the org chart."
@@ -650,6 +639,26 @@ msgstr "Afficher le téléphone portable"
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:44
 msgid "Display E-mail"
 msgstr "Afficher l'e-mail"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:55
+msgid "CSS Style Sheet"
+msgstr "Feuille de style CSS"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:58
+msgid "Style 1 (bold)"
+msgstr "Style 1 (épais)"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:59
+msgid "Style 2 (bold)"
+msgstr "Style 2 (épais)"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:60
+msgid "Style 3 (thin)"
+msgstr "Style 3 (fin)"
+
+#: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/settings/clicface-organi-settings.php:61
+msgid "Style 4 (thin)"
+msgstr "Style 4 (fin)"
 
 #: /home/jeriel/Internet/Clicface/wordpress/repo_wp_clicface_trombi/clicface-organi-std/parts/meta-boxes/organi-orgchart.php:13
 msgid "Title"

@@ -29,6 +29,7 @@ Features: (depending on the version)
 * Search Function & Exposed Filters
 * Clicface Organi, the Org Chart web application
 
+[youtube http://www.youtube.com/watch?v=6VjluwEd5UM]
 
 Supported languages:
 
