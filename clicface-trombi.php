@@ -3,7 +3,7 @@
 Plugin Name: Clicface Trombi
 Plugin URI: http://www.clicface.com/
 Description: A great plugin for WordPress that creates a directory of all your employees.
-Version: 1.06
+Version: 1.07
 Author: Clicface
 Author URI: http://www.clicface.com/
 Plugin Type: Piklist

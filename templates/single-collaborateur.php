@@ -4,6 +4,7 @@ require_once( plugin_dir_path(__FILE__) . '../includes/class-collaborateur.php' 
 $collaborateur = new clicface_Collaborateur( get_the_ID() );
 
 $clicface_trombi_settings = get_option('clicface_trombi_settings');
+$display_small_name = $clicface_trombi_settings['display_small_name'];
 
 if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 	get_header();
@@ -34,7 +35,9 @@ if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 					<table class="clicface-trombi-collaborateur-contenu-table">
 						<tr>
 							<td>
-								<div class="clicface-trombi-employee-name"><?php echo $collaborateur->Nom; ?></div>
+								<?php if( $display_small_name == 'oui' ): ?>
+									<div class="clicface-trombi-employee-name"><?php echo $collaborateur->Nom; ?></div>
+								<?php endif; ?>
 								<div class="clicface-trombi-employee-function"><?php echo $collaborateur->Fonction; ?></div>
 								<div class="clicface-trombi-employee-service"><?php echo $collaborateur->Service; ?></div><br />
 								<?php if( $collaborateur->TelephoneFixe != NULL ): ?>

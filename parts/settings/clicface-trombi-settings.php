@@ -39,6 +39,17 @@ piklist('field', array(
 	)
 ));
 
+ piklist('field', array(
+ 	'type' => 'radio'
+	,'field' => 'display_small_name'
+	,'label' => __('Display Employee Name again in the employee page info', 'clicface-trombi')
+	,'value' => 'non'
+	,'choices' => array(
+		'oui' => __('Yes', 'clicface-trombi')
+		,'non' => __('No', 'clicface-trombi')
+	)
+));
+
 piklist('field', array(
 	'type' => 'radio'
 	,'field' => 'trombi_display_return_link'
