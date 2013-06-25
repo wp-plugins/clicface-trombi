@@ -1,10 +1,10 @@
 === Clicface Trombi ===
 Contributors: clicface
 Donate link: http://www.clicface.com/
-Tags: online directory, directory, trombinoscope, org chart
+Tags: online directory, directory, employee, employee list, employees, staff, staff directory, staff list, business directory, member directory, trombinoscope, org chart
 Requires at least: 2.9.2
 Tested up to: 3.5.1
-Stable tag: 1.01
+Stable tag: 1.06
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,10 +22,14 @@ Clicface Trombi is the solution to easily publish the directory of an organizati
 Features: (depending on the version)
 
 * Easy integration
+* Grid or List Display
+* Show employee's details in a new window or a lightbox
+* Custom Colors
 * QR Code
 * Search Function & Exposed Filters
 * Clicface Organi, the Org Chart web application
 
+[youtube http://www.youtube.com/watch?v=6VjluwEd5UM]
 
 Supported languages:
 
@@ -72,9 +76,34 @@ To use customized fields with Clicface Trombi, we suggest you to choose the best
 = I can not run the plugin. Where can I find help? =
 If you need help, feel free to contact us using the [Support Ticket System](http://support.clicface.com/). You can also post a question on [the WordPress forum dedicated to the plugin](http://wordpress.org/tags/clicface-trombi?forum_id=10).
 
+*You can check more FAQ [on our website](http://www.clicface.com/faq).*
+
 == Screenshots ==
 Screenshots are available on the [Clicface Trombi plugin website](http://www.clicface.com/screenshots).
 
 == Changelog ==
+= 1.06 =
+* Fixing picture attachment notice
+
+= 1.05 =
+* Improving CSS styles for easier customization
+
+= 1.04 =
+* Improving lightbox
+
+= 1.03 =
+* Adding the choice to open the staff person's details in the same window, a new window or a lightbox
+* Adding an option to add a link to the previous page on the staff person's detail page
+* Adding an option to move the page to the content on each employee's page
+* Improving the setting page
+
+= 1.02 =
+* Adding grid display with custom colors
+* Adding lines between employees for better readability (list display)
+
 = 1.01 =
 * Initial import
+
+== Upgrade Notice ==
+= 1.03 =
+Please revalidate all the settings in the Clicface Trombi tab of the Admin Section to take into account all new settings.

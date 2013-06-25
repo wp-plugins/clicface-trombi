@@ -32,7 +32,7 @@ piklist('field', array(
 	'type' => 'radio'
 	,'field' => 'actif_trombi'
 	,'label' => __('Active', 'clicface-trombi')
-	,'description' => __('Display the employee in the trombinoscope', 'clicface-trombi')
+	,'description' => __('Display the employee in the directory', 'clicface-trombi')
 	,'value' => 'oui'
 	,'list' => false
 	,'choices' => array(
@@ -130,7 +130,7 @@ if ($attachments) {
 		setup_postdata($post); ?>
 			<div id="pik_post_attachment_<?php echo $post->ID; ?>" class="piklist-field-container">
 				<div class="piklist-label-container">
-					<?php echo wp_get_attachment_link( $attachment->ID, 'thumbnail', false, true ); ?>
+					<?php echo wp_get_attachment_link( $post->ID, 'thumbnail', false, true ); ?>
 				</div>
 				<div class="piklist-field">
 					<a href="<?php echo wp_nonce_url( "/wp-admin/post.php?action=delete&amp;post=$post->ID", 'delete-post_' . $post->ID ) ?>"><?php _e('Permanently delete the picture', 'clicface-trombi'); ?></a>

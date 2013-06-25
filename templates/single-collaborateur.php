@@ -3,12 +3,28 @@
 require_once( plugin_dir_path(__FILE__) . '../includes/class-collaborateur.php' );
 $collaborateur = new clicface_Collaborateur( get_the_ID() );
 
-wp_enqueue_style('clicface-trombi-style');
+$clicface_trombi_settings = get_option('clicface_trombi_settings');
 
-get_header(); ?>
+if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
+	get_header();
+	wp_enqueue_style('clicface-trombi-style');
+} else {
+	echo '<html>';
+	echo '<head>';
+	echo '<title></title>';
+	echo '<link rel="stylesheet" type="text/css" href="' . plugins_url( 'clicface-trombi/css/clicface-trombi.css') . '">';
+	echo '<link rel="stylesheet" type="text/css" href="' . plugins_url( 'clicface-trombi/css/clicface-trombi-thickbox.css') . '">';
+	echo '</head>';
+	echo '<body>';
+}
+?>
 <div id="content" role="main">
 	<?php while ( have_posts() ) : the_post(); ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<a name="ClicfaceTrombi">&nbsp;</a>
+			<?php if( $clicface_trombi_settings['trombi_display_return_link'] == 'oui' ): ?>
+				<a href="javascript:history.go(-1)">&lt;&lt;&nbsp;<?php _e('Return to the previous page', 'clicface-trombi'); ?></a><br /><br />
+			<?php endif; ?>
 			<header class="entry-header">
 				<h1 class="entry-title"><?php echo $collaborateur->Nom; ?></h1>
 			</header><!-- .entry-header -->
@@ -18,9 +34,9 @@ get_header(); ?>
 					<table class="clicface-trombi-collaborateur-contenu-table">
 						<tr>
 							<td>
-								<strong><?php echo $collaborateur->Nom; ?></strong><br />
-								<?php echo $collaborateur->Fonction; ?><br />
-								<i><?php echo $collaborateur->Service; ?></i><br /><br />
+								<div class="clicface-trombi-employee-name"><?php echo $collaborateur->Nom; ?></div>
+								<div class="clicface-trombi-employee-function"><?php echo $collaborateur->Fonction; ?></div>
+								<div class="clicface-trombi-employee-service"><?php echo $collaborateur->Service; ?></div><br />
 								<?php if( $collaborateur->TelephoneFixe != NULL ): ?>
 									<?php _e('Phone:', 'clicface-trombi'); ?> <?php echo $collaborateur->TelephoneFixe; ?><br />
 								<?php endif; ?>
@@ -32,7 +48,7 @@ get_header(); ?>
 								<?php endif; ?>
 								<br />
 								<?php if( $collaborateur->Commentaires != NULL ): ?>
-									<i><?php echo $collaborateur->Commentaires; ?></i><br />
+									<div class="clicface-trombi-employee-comments"><?php echo $collaborateur->Commentaires; ?></div>
 								<?php endif; ?>
 								<br />
 							</td>
@@ -46,4 +62,11 @@ get_header(); ?>
 		</article><!-- #post-<?php the_ID(); ?> -->
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- #content -->
-<?php get_footer(); ?>
+<?php
+if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
+	get_footer();
+} else {
+	echo '</body>';
+	echo '</html>';
+}
+?>
