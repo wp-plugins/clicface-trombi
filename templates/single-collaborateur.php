@@ -23,8 +23,11 @@ if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 	<?php while ( have_posts() ) : the_post(); ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<a name="ClicfaceTrombi">&nbsp;</a>
-			<?php if( $clicface_trombi_settings['trombi_display_return_link'] == 'oui' ): ?>
+			<?php if( $clicface_trombi_settings['trombi_display_return_link'] == 'oui' && $clicface_trombi_settings['trombi_target_window'] == '_self' ): ?>
 				<a href="javascript:history.go(-1)">&lt;&lt;&nbsp;<?php _e('Return to the previous page', 'clicface-trombi'); ?></a><br /><br />
+			<?php endif; ?>
+			<?php if( $clicface_trombi_settings['trombi_display_return_link'] == 'oui' && $clicface_trombi_settings['trombi_target_window'] == '_blank' ): ?>
+				<a href="javascript:self.close()"><?php _e('Close this Window', 'clicface-trombi'); ?></a><br /><br />
 			<?php endif; ?>
 			<header class="entry-header">
 				<h1 class="entry-title"><?php echo $collaborateur->Nom; ?></h1>

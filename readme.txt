@@ -4,7 +4,7 @@ Donate link: http://www.clicface.com/
 Tags: online directory, directory, employee, employee list, employees, staff, staff directory, staff list, business directory, member directory, trombinoscope, org chart
 Requires at least: 2.9.2
 Tested up to: 3.5.1
-Stable tag: 1.07
+Stable tag: 1.08
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,8 +82,11 @@ If you need help, feel free to contact us using the [Support Ticket System](http
 Screenshots are available on the [Clicface Trombi plugin website](http://www.clicface.com/screenshots).
 
 == Changelog ==
+= 1.08 =
+* Improving employee page info (return/close link)
+
 = 1.07 =
-* Improving employee page info
+* Improving employee page info (duplicated name)
 
 = 1.06 =
 * Fixing picture attachment notice
