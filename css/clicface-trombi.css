@@ -1,0 +1,82 @@
+.clicface-trombi-employee-name {
+  font-weight: bold;
+}
+
+.clicface-trombi-employee-function {
+  font-style: italic;
+}
+
+.clicface-trombi-employee-service {
+  
+}
+
+.clicface-trombi-employee-comments {
+  
+}
+
+
+/* DO NOT EDIT THIS PART! */
+.clicface-trombi-table,
+.clicface-trombi-table td a img {
+  border: none !important;
+  border-spacing: 15px;
+  margin: 3px;
+}
+
+.clicface-trombi-vignette:hover {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.clicface-trombi-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.clicface-trombi-cellule {
+  width: 250px;
+  font-size: 13px;
+  border-radius: 8px;
+  color: #000000;
+  -moz-border-radius: 6px;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.496094) 3px 3px 3px 0px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.clicface-trombi-collaborateur {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.clicface-trombi-collaborateur-contenu {
+  text-align: center;
+  width: 100%;
+}
+
+.clicface-trombi-collaborateur-contenu-table {
+  border: none !important;
+  margin: 0 auto;
+}
+
+.clicface-trombi-collaborateur-contenu-table td {
+  border: none !important;
+  vertical-align: top;
+}
+
+#promote-clicface-trombi li {
+  padding-left:20px;
+  list-style-type: none;
+}
+
+#promote-clicface-trombi #twitter {
+  background:url(sprite.png) -10px -746px no-repeat transparent;
+}
+
+#promote-clicface-trombi #star {
+  background:url(sprite.png) -10px -710px no-repeat transparent;
+}
