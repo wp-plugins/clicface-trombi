@@ -32,7 +32,7 @@ piklist('field', array(
 	'type' => 'radio'
 	,'field' => 'actif_trombi'
 	,'label' => __('Active', 'clicface-trombi')
-	,'description' => __('Display the employee in the directory', 'clicface-trombi')
+	,'description' => __('Display this person in the directory', 'clicface-trombi')
 	,'value' => 'oui'
 	,'list' => false
 	,'choices' => array(
@@ -55,7 +55,6 @@ piklist('field', array(
 	,'scope' => 'taxonomy'
 	,'field' => 'collaborateur_service'
 	,'label' => __('Division', 'clicface-trombi')
-	,'description' => __('Employee\'s Division', 'clicface-trombi')
 	,'choices' => piklist(
 		get_terms('collaborateur_service', array(
 			'hide_empty' => false

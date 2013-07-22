@@ -3,7 +3,7 @@
 Plugin Name: Clicface Trombi
 Plugin URI: http://www.clicface.com/
 Description: A great plugin for WordPress that creates a directory of all your employees.
-Version: 1.08
+Version: 1.09
 Author: Clicface
 Author URI: http://www.clicface.com/
 Plugin Type: Piklist
@@ -26,13 +26,32 @@ function clicface_trombi_init_function() {
 	}
 }
 
+add_filter('piklist_admin_pages', 'piklist_collaborateur_admin_pages');
+function piklist_collaborateur_admin_pages($pages) {
+	$pages[] = array(
+		'page_title' => __('Clicface Trombi Settings', 'clicface-trombi')
+		,'menu_title' => 'Clicface Trombi'
+		,'capability' => 'manage_options'
+		,'menu_slug' => 'clicface_trombi_settings'
+		,'setting' => 'clicface_trombi_settings'
+		,'icon' => 'options-general'
+		,'single_line' => false
+		,'default_tab' => __('General', 'clicface-trombi')
+	);
+
+	return $pages;
+}
+
 add_filter('piklist_post_types', 'piklist_collaborateur_post_types');
 function piklist_collaborateur_post_types($post_types) {
+	$clicface_trombi_settings = get_option('clicface_trombi_settings');
+	$label_name_plural = ($clicface_trombi_settings['trombi_title_name_plural']) ? $clicface_trombi_settings['trombi_title_name_plural'] : __('Employees', 'clicface-trombi');
+	$label_name_singular = ($clicface_trombi_settings['trombi_title_name_singular']) ? $clicface_trombi_settings['trombi_title_name_singular'] : __('Employee', 'clicface-trombi');
 	$post_types['collaborateur'] = array(
 			'labels' => array(
-				'name' => __('Employees', 'clicface-trombi')
-				,'singular_name' => __('Employee', 'clicface-trombi')
-				,'add_new' => __('Add New Employee', 'clicface-trombi')
+				'name' => ucwords($label_name_plural)
+				,'singular_name' => ucwords($label_name_singular)
+				,'add_new' => sprintf(__('Add New %s', 'clicface-trombi'), ucwords($label_name_singular))
 			)
 			,'public' => true
 			,'rewrite' => array(
@@ -40,7 +59,7 @@ function piklist_collaborateur_post_types($post_types) {
 			)
 			,'capability_type' => 'post'
 			,'edit_columns' => array(
-				'title' => __('Employee', 'clicface-trombi')
+				'title' => ucwords($label_name_singular)
 				,'author' => __('Author', 'clicface-trombi')
 			)
 			,'hide_meta_box' => array(
@@ -98,22 +117,6 @@ function piklist_collaborateur_worksites($taxonomies) {
 		)
 	);
 	return $taxonomies;
-}
-
-add_filter('piklist_admin_pages', 'piklist_collaborateur_admin_pages');
-function piklist_collaborateur_admin_pages($pages) {
-	$pages[] = array(
-		'page_title' => __('Clicface Trombi Settings', 'clicface-trombi')
-		,'menu_title' => 'Clicface Trombi'
-		,'capability' => 'manage_options'
-		,'menu_slug' => 'clicface_trombi_settings'
-		,'setting' => 'clicface_trombi_settings'
-		,'icon' => 'options-general'
-		,'single_line' => false
-		,'default_tab' => __('General', 'clicface-trombi')
-	);
-
-	return $pages;
 }
 
 add_action('new_to_publish', 'trombi_check_num_collab');
@@ -217,9 +220,18 @@ function trombi_display_views() {
 				$collaborateur = new clicface_Collaborateur( get_the_ID() );
 				$output .= '<tr><td style="border: none;">';
 				$output .= '<a class="clicface-trombi-collaborateur ' . $ExtraClassTxt .'" href="'. $collaborateur->Link . $ExtraLink .'" target="'. $WindowTarget .'" ' . $ExtraClassImg . '><div>';
-				$output .= '<div class="clicface-trombi-employee-name">' . $collaborateur->Nom . '</div>';
-				$output .= '<div class="clicface-trombi-employee-function">' . $collaborateur->Fonction . '</div><br />';
-				$output .= '<u>' . __('Division:', 'clicface-trombi') . '</u><br /><div class="clicface-trombi-employee-service">' . $collaborateur->Service . '</div>';
+				$output .= '<div class="clicface-trombi-person-name">' . $collaborateur->Nom . '</div>';
+				$output .= '<div class="clicface-trombi-person-function">' . $collaborateur->Fonction . '</div><br />';
+				$output .= '<u>' . __('Division:', 'clicface-trombi') . '</u><br /><div class="clicface-trombi-person-service">' . $collaborateur->Service . '</div>';
+				if ( $clicface_trombi_settings['trombi_display_phone'] == 'oui' && $collaborateur->TelephoneFixe != NULL ) {
+					$output .= '<br />' . __('Phone:', 'clicface-trombi') . ' ' . $collaborateur->TelephoneFixe;
+				}
+				if ( $clicface_trombi_settings['trombi_display_cellular'] == 'oui' && $collaborateur->TelephonePortable != NULL ) {
+					$output .= '<br />' . __('Cell:', 'clicface-trombi') . ' ' . $collaborateur->TelephonePortable;
+				}
+				if ( $clicface_trombi_settings['trombi_display_email'] == 'oui' && $collaborateur->Mail != NULL ) {
+					$output .= '<br />' . $collaborateur->Mailto;
+				}
 				$output .= '</div></a>';
 				$output .= '</td><td style="border: none;">';
 				$output .= '<div class="piklist-label-container"><a href="' . $collaborateur->Link . $ExtraLink .'" target="'. $WindowTarget .'" ' . $ExtraClassImg . '>' . $collaborateur->PhotoThumbnail . '</a></div>';
@@ -231,7 +243,7 @@ function trombi_display_views() {
 		
 		default: //grid
 			$i = 1;
-			$output .= '<style type="text/css">.clicface-trombi-cellule {background-color: ' . $clicface_trombi_settings['vignette_color_background_top'] . '; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(' . $clicface_trombi_settings['vignette_color_background_top'] . '), to(' . $clicface_trombi_settings['vignette_color_background_bottom'] . ')); border: 2px solid ' . $clicface_trombi_settings['vignette_color_border'] . ';}</style>';
+			$output .= '<style type="text/css">.clicface-trombi-cellule {width: ' . $clicface_trombi_settings['vignette_width'] . 'px; background-color: ' . $clicface_trombi_settings['vignette_color_background_top'] . '; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(' . $clicface_trombi_settings['vignette_color_background_top'] . '), to(' . $clicface_trombi_settings['vignette_color_background_bottom'] . ')); border: 2px solid ' . $clicface_trombi_settings['vignette_color_border'] . ';}</style>';
 			$output .= '<table class="clicface-trombi-table">';
 			$output .= '<tr>';
 			while ( $the_query->have_posts() ) : $the_query->the_post();
@@ -239,9 +251,18 @@ function trombi_display_views() {
 				$output .= '<td class="clicface-trombi-cellule"><div class="clicface-trombi-vignette">';
 				$output .= '<div class="piklist-label-container"><a href="' . $collaborateur->Link . $ExtraLink . '" target="'. $WindowTarget .'" ' . $ExtraClassImg . '>' . $collaborateur->PhotoThumbnail . '</a></div>';
 				$output .= '<a class="clicface-trombi-collaborateur ' . $ExtraClassTxt . '" href="' . $collaborateur->Link . $ExtraLink . '" target="'. $WindowTarget .'" ' . $ExtraClassImg . '><div>';
-				$output .= '<div class="clicface-trombi-employee-name">' . $collaborateur->Nom . '</div>';
-				$output .= '<div class="clicface-trombi-employee-function">' . $collaborateur->Fonction . '</div>';
-				$output .= '<div class="clicface-trombi-employee-service">' . $collaborateur->Service . '</div>';
+				$output .= '<div class="clicface-trombi-person-name">' . $collaborateur->Nom . '</div>';
+				$output .= '<div class="clicface-trombi-person-function">' . $collaborateur->Fonction . '</div>';
+				$output .= '<div class="clicface-trombi-person-service">' . $collaborateur->Service . '</div>';
+				if ( $clicface_trombi_settings['trombi_display_phone'] == 'oui' && $collaborateur->TelephoneFixe != NULL ) {
+					$output .= '<br />' . __('Phone:', 'clicface-trombi') . ' ' . $collaborateur->TelephoneFixe;
+				}
+				if ( $clicface_trombi_settings['trombi_display_cellular'] == 'oui' && $collaborateur->TelephonePortable != NULL ) {
+					$output .= '<br />' . __('Cell:', 'clicface-trombi') . ' ' . $collaborateur->TelephonePortable;
+				}
+				if ( $clicface_trombi_settings['trombi_display_email'] == 'oui' && $collaborateur->Mail != NULL ) {
+					$output .= '<br />' . $collaborateur->Mailto;
+				}
 				$output .= '</div></a>';
 				$output .= '</div></td>';
 				if ( $i % $clicface_trombi_settings['trombi_collaborateurs_par_ligne'] == 0) {

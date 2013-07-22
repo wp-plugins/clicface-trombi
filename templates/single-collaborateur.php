@@ -39,10 +39,10 @@ if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 						<tr>
 							<td>
 								<?php if( $display_small_name == 'oui' ): ?>
-									<div class="clicface-trombi-employee-name"><?php echo $collaborateur->Nom; ?></div>
+									<div class="clicface-trombi-person-name"><?php echo $collaborateur->Nom; ?></div>
 								<?php endif; ?>
-								<div class="clicface-trombi-employee-function"><?php echo $collaborateur->Fonction; ?></div>
-								<div class="clicface-trombi-employee-service"><?php echo $collaborateur->Service; ?></div><br />
+								<div class="clicface-trombi-person-function"><?php echo $collaborateur->Fonction; ?></div>
+								<div class="clicface-trombi-person-service"><?php echo $collaborateur->Service; ?></div><br />
 								<?php if( $collaborateur->TelephoneFixe != NULL ): ?>
 									<?php _e('Phone:', 'clicface-trombi'); ?> <?php echo $collaborateur->TelephoneFixe; ?><br />
 								<?php endif; ?>
@@ -54,7 +54,7 @@ if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 								<?php endif; ?>
 								<br />
 								<?php if( $collaborateur->Commentaires != NULL ): ?>
-									<div class="clicface-trombi-employee-comments"><?php echo $collaborateur->Commentaires; ?></div>
+									<div class="clicface-trombi-person-comments"><?php echo $collaborateur->Commentaires; ?></div>
 								<?php endif; ?>
 								<br />
 							</td>

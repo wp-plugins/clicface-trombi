@@ -71,7 +71,7 @@ class clicface_Collaborateur {
 		}
 		
 		catch (Exception $e) {
-			$this->Erreur = __('An error occured for the employee', 'clicface-trombi') . " $this->Nom : " . $e->getMessage() . "\r";
+			$this->Erreur = __('An error occurred:', 'clicface-trombi') . " $this->Nom : " . $e->getMessage() . "\r";
 			return false;
 		}
 	}

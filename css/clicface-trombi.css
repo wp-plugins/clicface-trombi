@@ -1,26 +1,33 @@
-.clicface-trombi-employee-name {
+.clicface-trombi-person-name {
   font-weight: bold;
 }
 
-.clicface-trombi-employee-function {
+.clicface-trombi-person-function {
   font-style: italic;
 }
 
-.clicface-trombi-employee-service {
+.clicface-trombi-person-service {
   
 }
 
-.clicface-trombi-employee-comments {
+.clicface-trombi-person-comments {
   
 }
 
 
 /* DO NOT EDIT THIS PART! */
-.clicface-trombi-table,
+.clicface-trombi-table{
+  border: none !important;
+  margin: 3px;
+  border-collapse: separate;
+  border-spacing: 10px;
+  width: auto;
+}
+
 .clicface-trombi-table td a img {
   border: none !important;
-  border-spacing: 15px;
   margin: 3px;
+  box-shadow: none;
 }
 
 .clicface-trombi-vignette:hover {
@@ -36,7 +43,7 @@
 }
 
 .clicface-trombi-cellule {
-  width: 250px;
+  padding: 2px;
   font-size: 13px;
   border-radius: 8px;
   color: #000000;

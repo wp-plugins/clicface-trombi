@@ -3,7 +3,7 @@
 Title: Clicface Trombi
 Setting: clicface_trombi_settings
 Tab: ThickBox
-Order: 10
+Order: 30
 */
 
 piklist('field', array(
