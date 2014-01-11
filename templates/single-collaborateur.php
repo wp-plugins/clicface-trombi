@@ -54,7 +54,7 @@ if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 								<?php endif; ?>
 								<br />
 								<?php if( $collaborateur->Commentaires != NULL ): ?>
-									<div class="clicface-trombi-person-comments"><?php echo $collaborateur->Commentaires; ?></div>
+									<div class="clicface-trombi-person-comments"><?php echo nl2br( $collaborateur->Commentaires ); ?></div>
 								<?php endif; ?>
 								<br />
 							</td>

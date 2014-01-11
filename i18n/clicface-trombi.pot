@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clicface Trombi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 09:28+0100\n"
-"PO-Revision-Date: 2013-07-22 09:29+0100\n"
+"POT-Creation-Date: 2013-09-24 22:02+0100\n"
+"PO-Revision-Date: 2013-09-24 22:02+0100\n"
 "Last-Translator: Jeriel <jeriel@clicface.com>\n"
 "Language-Team:  <contact@clicface.com>\n"
 "MIME-Version: 1.0\n"
@@ -24,88 +24,89 @@ msgid "Clicface Trombi Settings"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:39
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:39
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:40
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-organi-std/clicface-organi-std.php:78
 msgid "General"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:48
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/settings/clicface-trombi-title.php:24
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:48
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:49
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-title.php:24
 msgid "Employees"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:49
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/settings/clicface-trombi-title.php:13
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:49
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:50
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-title.php:13
 msgid "Employee"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:54
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:54
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:55
 #, php-format
 msgid "Add New %s"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:63
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:63
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:64
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-organi-std/clicface-organi-std.php:57
 msgid "Author"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:84
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:84
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:85
 msgid "Divisions"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:85
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/meta-boxes/champs-collaborateur.php:57
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:85
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:86
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:57
 msgid "Division"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:86
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:86
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:87
 msgid "Add New Division"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:108
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:108
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:109
 msgid "Worksites"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:109
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/meta-boxes/champs-collaborateur.php:73
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:109
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:110
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:73
 msgid "Worksite"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:110
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:110
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:111
 msgid "Add New Worksite"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:130
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:131
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:132
 msgid ""
 "You can't create any more record, you have already reached the limit. You "
 "have to update your Clicface Trombi plugin version to add more records."
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:225
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:374
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:480
 msgid "Division:"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:227
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:258
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/templates/single-collaborateur.php:47
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:376
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:409
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:482
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:515
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:546
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/templates/single-collaborateur-std.php:51
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-organi-std/clicface-organi-std.php:352
 msgid "Phone:"
@@ -114,8 +115,9 @@ msgstr ""
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:230
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/clicface-trombi.php:261
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/templates/single-collaborateur.php:50
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:379
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:412
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:485
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:518
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:549
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/templates/single-collaborateur-std.php:54
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-organi-std/clicface-organi-std.php:355
 msgid "Cell:"
@@ -163,7 +165,7 @@ msgid "The following plugin(s) have been deactivated."
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/includes/class-collaborateur.php:74
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/includes/class-collaborateur.php:91
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/includes/class-collaborateur.php:92
 msgid "An error occurred:"
 msgstr ""
 
@@ -229,9 +231,9 @@ msgstr ""
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:39
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-qrcode.php:15
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-search.php:29
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:26
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:38
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:50
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:27
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:39
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:51
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-fields.php:14
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-fields.php:25
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-fields.php:36
@@ -253,9 +255,9 @@ msgstr ""
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/meta-boxes/champs-collaborateur.php:40
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-qrcode.php:16
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-search.php:30
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:27
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:39
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:51
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:28
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:40
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:52
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-fields.php:15
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-fields.php:26
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-fields.php:37
@@ -369,29 +371,29 @@ msgid "Target to individual page"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/settings/clicface-trombi-settings-individual.php:14
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:14
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:15
 msgid "New Window"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/settings/clicface-trombi-settings-individual.php:15
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:15
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:16
 msgid "Same Window"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/settings/clicface-trombi-settings-individual.php:23
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:23
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:24
 msgid "Display name again in the individual page info"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/settings/clicface-trombi-settings-individual.php:34
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:34
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:35
 msgid ""
 "Display a link to the previous page or a link to close the new window (not "
 "applicable to ThickBox)"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/settings/clicface-trombi-settings-individual.php:36
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:36
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:37
 msgid ""
 "A link to the previous page can be displayed on each individual page when it "
 "is opened in the same window ; a link to close is displayed when the "
@@ -399,14 +401,14 @@ msgid ""
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/settings/clicface-trombi-settings-individual.php:46
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:46
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:47
 msgid ""
 "Move the page to the content on each individual page (not applicable to "
 "ThickBox)"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_svn_wordpress_clicface_trombi\trunk/parts/settings/clicface-trombi-settings-individual.php:48
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:48
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-individual.php:49
 msgid ""
 "This option is useful when you have a big header on your website and you "
 "want to avoid visitors to scroll down to the content on each individual page."
@@ -452,58 +454,66 @@ msgstr ""
 msgid "List"
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:32
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:33
 msgid "Clicface Trombi Standard Settings"
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:195
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:251
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:214
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:216
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:311
 msgid "Select a Division"
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:204
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:230
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:262
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:280
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:218
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:220
+msgid "All Divisions"
+msgstr ""
+
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:239
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:279
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:328
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:352
 msgid "Reset filter"
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:206
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:228
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:260
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:278
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:242
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:244
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:274
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:276
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:326
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:350
 msgid "Display all"
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:208
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:264
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:247
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:330
 msgid "Show only:"
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:213
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:269
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:258
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:341
 msgid "All divisions are displayed"
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:244
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:275
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:289
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:304
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:347
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:361
 msgid "Search by name:"
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:444
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/print/print-posts.php:23
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:581
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/print/print-posts.php:24
 msgid "Print this page"
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:562
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:699
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-organi-std/clicface-organi-std.php:549
 msgid ""
 "An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
 "\" onclick=\"document.location.reload(); return false;\">Try again</a>"
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:567
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/clicface-trombi-std.php:704
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-organi-std/clicface-organi-std.php:554
 msgid "An unknown error occurred"
 msgstr ""
@@ -602,8 +612,20 @@ msgid ""
 "Form (above)."
 msgstr ""
 
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-quicksand.php:11
+msgid "Height of boxes (in pixels)"
+msgstr ""
+
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings-quicksand.php:21
+msgid "Area Width (in pixels)"
+msgstr ""
+
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings.php:11
 msgid "Number of people per page"
+msgstr ""
+
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-settings.php:26
+msgid "jQuery Quicksand"
 msgstr ""
 
 #: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/parts/settings/clicface-trombi-print.php:12
@@ -627,7 +649,7 @@ msgstr ""
 msgid "This text is displayed at the bottom of printed pages."
 msgstr ""
 
-#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/print/print-posts.php:25
+#: J:\Internet\Clicface\wordpress\repo_clicface_wp\clicface-trombi-std/print/print-posts.php:26
 msgid "Nobody matched your criteria."
 msgstr ""
 
