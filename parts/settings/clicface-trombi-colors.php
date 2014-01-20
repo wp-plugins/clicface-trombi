@@ -3,7 +3,7 @@
 Title: Clicface Trombi
 Setting: clicface_trombi_settings
 Tab: Colors
-Order: 40
+Order: 50
 */
 
 piklist('field', array(

@@ -1,14 +1,15 @@
 <?php
 /*
-Title: Individual Page
+Title: Person's Profile
 Setting: clicface_trombi_settings
-Order: 40
+Tab: Person's Profile
+Order: 20
 */
 
 piklist('field', array(
 	'type' => 'radio'
 	,'field' => 'trombi_target_window'
-	,'label' => __('Target to individual page', 'clicface-trombi')
+	,'label' => __('Target to Person\'s Profile', 'clicface-trombi')
 	,'value' => '_blank'
 	,'choices' => array(
 		'_blank' => __('New Window', 'clicface-trombi')
@@ -17,10 +18,30 @@ piklist('field', array(
 	)
 ));
 
- piklist('field', array(
- 	'type' => 'radio'
-	,'field' => 'display_small_name'
-	,'label' => __('Display name again in the individual page info', 'clicface-trombi')
+piklist('field', array(
+	'type' => 'number'
+	,'field' => 'trombi_profile_width'
+	,'label' => __('Width (in pixels)', 'clicface-trombi')
+	,'value' => 720
+	,'attributes' => array(
+		'class' => 'small-text'
+	)
+));
+
+piklist('field', array(
+	'type' => 'number'
+	,'field' => 'trombi_profile_height'
+	,'label' => __('Height (in pixels)', 'clicface-trombi')
+	,'value' => 440
+	,'attributes' => array(
+		'class' => 'small-text'
+	)
+));
+
+piklist('field', array(
+	'type' => 'radio'
+	,'field' => 'trombi_display_worksite'
+	,'label' => __('Display worksite', 'clicface-trombi')
 	,'value' => 'non'
 	,'choices' => array(
 		'oui' => __('Yes', 'clicface-trombi')
@@ -43,7 +64,7 @@ piklist('field', array(
 piklist('field', array(
 	'type' => 'radio'
 	,'field' => 'trombi_move_to_anchor'
-	,'label' => __('Move the page to the content on each individual page (not applicable to ThickBox)', 'clicface-trombi')
+	,'label' => __('Move the page to the content on each Person\'s Profile page (not applicable to ThickBox)', 'clicface-trombi')
 	,'value' => 'non'
 	,'description' => __('This option is useful when you have a big header on your website and you want to avoid visitors to scroll down to the content on each individual page.', 'clicface-trombi')
 	,'choices' => array(

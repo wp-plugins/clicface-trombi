@@ -18,6 +18,13 @@ if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 	echo '</head>';
 	echo '<body>';
 }
+
+if ( $clicface_trombi_settings['trombi_profile_width'] == NULL ) {
+	$clicface_trombi_settings['trombi_profile_width'] = 720;
+}
+if ( $clicface_trombi_settings['trombi_profile_height'] == NULL ) {
+	$clicface_trombi_settings['trombi_profile_height'] = 440;
+}
 ?>
 <div id="content" role="main">
 	<?php while ( have_posts() ) : the_post(); ?>
@@ -30,36 +37,48 @@ if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 				<a href="javascript:self.close()"><?php _e('Close this Window', 'clicface-trombi'); ?></a><br /><br />
 			<?php endif; ?>
 			<header class="entry-header">
-				<h1 class="entry-title"><?php echo $collaborateur->Nom; ?></h1>
+				<!--<h1 class="entry-title"><?php echo $collaborateur->Nom; ?></h1>-->
 			</header><!-- .entry-header -->
 
+			<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet" type="text/css" />
+			<style type="text/css">.clicface-trombi-collaborateur-box {width: <?php echo $clicface_trombi_settings['trombi_profile_width']; ?>px; height: <?php echo $clicface_trombi_settings['trombi_profile_height']; ?>px;}</style>
 			<div class="entry-content">
-				<div class="clicface-trombi-collaborateur-contenu">
+				<div class="clicface-trombi-collaborateur-contenu  clicface-trombi-collaborateur-box">
 					<table class="clicface-trombi-collaborateur-contenu-table">
 						<tr>
 							<td>
 								<?php if( $display_small_name == 'oui' ): ?>
-									<div class="clicface-trombi-person-name"><?php echo $collaborateur->Nom; ?></div>
+									<div class="clicface-trombi-person-name-individual-page"><?php echo $collaborateur->Nom; ?></div>
 								<?php endif; ?>
-								<div class="clicface-trombi-person-function"><?php echo $collaborateur->Fonction; ?></div>
-								<div class="clicface-trombi-person-service"><?php echo $collaborateur->Service; ?></div><br />
-								<?php if( $collaborateur->TelephoneFixe != NULL ): ?>
-									<?php _e('Phone:', 'clicface-trombi'); ?> <?php echo $collaborateur->TelephoneFixe; ?><br />
+								<div class="clicface-trombi-person-function-individual-page"><?php echo $collaborateur->Fonction; ?></div>
+								<div class="clicface-trombi-person-service-individual-page"><?php echo $collaborateur->Service; ?></div><br />
+								<?php if( $clicface_trombi_settings['trombi_display_worksite'] == 'oui' ): ?>
+									<div class="clicface-trombi-person-worksite-individual-page"><?php echo $collaborateur->Worksite; ?></div><br />
 								<?php endif; ?>
-								<?php if( $collaborateur->TelephonePortable != NULL ): ?>
-									<?php _e('Cell:', 'clicface-trombi'); ?> <?php echo $collaborateur->TelephonePortable; ?><br />
-								<?php endif; ?>
-								<?php if( $collaborateur->Mail != NULL ): ?>
-									<?php _e('E-mail:', 'clicface-trombi'); ?> <?php echo $collaborateur->Mailto; ?><br />
-								<?php endif; ?>
-								<br />
-								<?php if( $collaborateur->Commentaires != NULL ): ?>
-									<div class="clicface-trombi-person-comments"><?php echo nl2br( $collaborateur->Commentaires ); ?></div>
-								<?php endif; ?>
-								<br />
+								<div class="clicface-trombi-person-details-individual-page">
+									<?php if( $collaborateur->TelephoneFixe != NULL ): ?>
+										<?php _e('Phone:', 'clicface-trombi'); ?> <?php echo $collaborateur->TelephoneFixe; ?><br />
+									<?php endif; ?>
+									<?php if( $collaborateur->TelephonePortable != NULL ): ?>
+										<?php _e('Cell:', 'clicface-trombi'); ?> <?php echo $collaborateur->TelephonePortable; ?><br />
+									<?php endif; ?>
+									<?php if( $collaborateur->Mail != NULL ): ?>
+										<?php _e('E-mail:', 'clicface-trombi'); ?> <?php echo $collaborateur->Mailto; ?><br />
+									<?php endif; ?>
+								</div><br />
 							</td>
 							<td>
-								<?php echo $collaborateur->PhotoLarge; ?><br /><br />
+								<div style="float: right;">
+									<?php echo $collaborateur->PhotoThumbnail; ?><br /><br />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<?php if( $collaborateur->Commentaires != NULL ): ?>
+									<div class="clicface-trombi-person-comments-individual-page"><?php echo nl2br( $collaborateur->Commentaires ); ?></div>
+								<?php endif; ?>
+								<br />
 							</td>
 						</tr>
 					</table>

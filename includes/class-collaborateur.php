@@ -19,6 +19,14 @@ class clicface_Collaborateur {
 				$this->Service = NULL;
 			}
 			
+			// Worksite
+			$collaborateur_worksite = wp_get_post_terms( $id, 'collaborateur_worksite' );
+			if ( isset($collaborateur_worksite[0]->name) ) {
+				$this->Worksite = $collaborateur_worksite[0]->name;
+			} else {
+				$this->Worksite = NULL;
+			}
+			
 			// Mail
 			if( !function_exists('convert_email_adr') ){
 				function convert_email_adr($email) {

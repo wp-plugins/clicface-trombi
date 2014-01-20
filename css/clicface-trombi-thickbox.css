@@ -1,3 +1,7 @@
+body {
+  background-color: #E8E8E8;
+}
+
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #3b3b3b;
@@ -12,5 +16,4 @@ h1 {
 
 .clicface-trombi-collaborateur-contenu-table td {
   color: #3b3b3b;
-  width: 50%;
 }

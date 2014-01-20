@@ -4,7 +4,7 @@ Donate link: http://www.clicface.com/
 Tags: online directory, directory, employee, employee list, employees, staff, staff directory, staff list, business directory, member directory, trombinoscope, org chart
 Requires at least: 2.9.2
 Tested up to: 3.8
-Stable tag: 1.10
+Stable tag: 1.11
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,21 +67,27 @@ Languages currently available are:
 
 * English
 * French
+* Vietnamese
 
 You can also translate Clicface Trombi in your own language, then submit your translation, so everybody would can use it. To do it, we have [a project hosted at Transifex](https://www.transifex.com/projects/p/clicface-trombi/) where you can add the translation in your language. It’s simple, fast and effective.
 
 = I would like to use customized fields. How can I do? =
-To use customized fields with Clicface Trombi, we suggest you to choose the best version for you with our [comparison table](http://www.clicface.com/#choose_your_version).
+To use customized fields with Clicface Trombi, we suggest you to choose the best version for you with our [comparison table](http://www.clicface.com/pricing/).
 
 = I can not run the plugin. Where can I find help? =
 If you need help, feel free to contact us using the [Support Ticket System](http://support.clicface.com/). You can also post a question on [the WordPress forum dedicated to the plugin](http://wordpress.org/tags/clicface-trombi?forum_id=10).
 
-*You can check more FAQ [on our website](http://www.clicface.com/faq).*
+*You can check more FAQ [on our website](http://www.clicface.com/documentation/faq).*
 
 == Screenshots ==
 Screenshots are available on the [Clicface Trombi plugin website](http://www.clicface.com/screenshots).
 
 == Changelog ==
+= 1.11 =
+* Improving CSS styles
+* Fixing number of displayed employees
+* Adding the ability to display the Division field in the list page
+
 = 1.10 =
 * Improving employee page info (comment block)
 

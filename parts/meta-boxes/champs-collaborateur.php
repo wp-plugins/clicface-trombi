@@ -29,19 +29,6 @@ piklist('field', array(
 ));
 
 piklist('field', array(
-	'type' => 'radio'
-	,'field' => 'actif_trombi'
-	,'label' => __('Active', 'clicface-trombi')
-	,'description' => __('Display this person in the directory', 'clicface-trombi')
-	,'value' => 'oui'
-	,'list' => false
-	,'choices' => array(
-		'oui' => __('Yes', 'clicface-trombi')
-		,'non' => __('No', 'clicface-trombi')
-	)
-));
-
-piklist('field', array(
 	'type' => 'text'
 	,'field' => 'fonction'
 	,'label' => __('Function', 'clicface-trombi')

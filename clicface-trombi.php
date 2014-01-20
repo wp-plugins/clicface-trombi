@@ -3,7 +3,7 @@
 Plugin Name: Clicface Trombi
 Plugin URI: http://www.clicface.com/
 Description: A great plugin for WordPress that creates a directory of all your employees.
-Version: 1.10
+Version: 1.11
 Author: Clicface
 Author URI: http://www.clicface.com/
 Plugin Type: Piklist
@@ -32,7 +32,7 @@ function piklist_collaborateur_admin_pages($pages) {
 		'page_title' => __('Clicface Trombi Settings', 'clicface-trombi')
 		,'menu_title' => 'Clicface Trombi'
 		,'capability' => 'manage_options'
-		,'menu_slug' => 'clicface_trombi_settings'
+		,'menu_slug' => 'clicface_trombi_settings_menu'
 		,'setting' => 'clicface_trombi_settings'
 		,'icon' => 'options-general'
 		,'single_line' => false
@@ -180,12 +180,22 @@ function trombi_display_views() {
 	$output = '';
 	
 	// query
-	$args = array(
-			'post_type' => 'collaborateur',
-			'meta_key' => 'nom',
-			'orderby' => 'meta_value',
-			'order' => 'ASC'
-		);
+	if ( $piklist_version == '0.8.0b1' || '0.8.0b2' || '0.8.0b3' || '0.8.0b4' || '0.8.0b5' || '0.8.0b6' ) {
+		$args = array(
+				'post_type' => 'collaborateur',
+				'posts_per_page' => -1,
+				'orderby' => 'nom',
+				'order' => 'ASC',
+			);
+	} else {
+		$args = array(
+				'post_type' => 'collaborateur',
+				'posts_per_page' => -1,
+				'meta_key' => 'nom',
+				'orderby' => 'meta_value',
+				'order' => 'ASC',
+			);
+	}
 	$the_query = new WP_Query($args);
 	
 	switch($clicface_trombi_settings['trombi_target_window']) {
@@ -221,8 +231,10 @@ function trombi_display_views() {
 				$output .= '<tr><td style="border: none;">';
 				$output .= '<a class="clicface-trombi-collaborateur ' . $ExtraClassTxt .'" href="'. $collaborateur->Link . $ExtraLink .'" target="'. $WindowTarget .'" ' . $ExtraClassImg . '><div>';
 				$output .= '<div class="clicface-trombi-person-name">' . $collaborateur->Nom . '</div>';
-				$output .= '<div class="clicface-trombi-person-function">' . $collaborateur->Fonction . '</div><br />';
-				$output .= '<u>' . __('Division:', 'clicface-trombi') . '</u><br /><div class="clicface-trombi-person-service">' . $collaborateur->Service . '</div>';
+				$output .= '<div class="clicface-trombi-person-function">' . $collaborateur->Fonction . '</div>';
+				if ( $clicface_trombi_settings['trombi_display_service'] == 'oui' ) {
+					$output .= '<br /><u>' . __('Division:', 'clicface-trombi') . '</u><br /><div class="clicface-trombi-person-service">' . $collaborateur->Service . '</div>';
+				}
 				if ( $clicface_trombi_settings['trombi_display_phone'] == 'oui' && $collaborateur->TelephoneFixe != NULL ) {
 					$output .= '<br />' . __('Phone:', 'clicface-trombi') . ' ' . $collaborateur->TelephoneFixe;
 				}
@@ -253,7 +265,9 @@ function trombi_display_views() {
 				$output .= '<a class="clicface-trombi-collaborateur ' . $ExtraClassTxt . '" href="' . $collaborateur->Link . $ExtraLink . '" target="'. $WindowTarget .'" ' . $ExtraClassImg . '><div>';
 				$output .= '<div class="clicface-trombi-person-name">' . $collaborateur->Nom . '</div>';
 				$output .= '<div class="clicface-trombi-person-function">' . $collaborateur->Fonction . '</div>';
-				$output .= '<div class="clicface-trombi-person-service">' . $collaborateur->Service . '</div>';
+				if ( $clicface_trombi_settings['trombi_display_service'] == 'oui' ) {
+					$output .= '<div class="clicface-trombi-person-service">' . $collaborateur->Service . '</div>';
+				}
 				if ( $clicface_trombi_settings['trombi_display_phone'] == 'oui' && $collaborateur->TelephoneFixe != NULL ) {
 					$output .= '<br />' . __('Phone:', 'clicface-trombi') . ' ' . $collaborateur->TelephoneFixe;
 				}
