@@ -8,7 +8,7 @@ Order: 30
 piklist('field', array(
 	'type' => 'number'
 	,'field' => 'trombi_collaborateurs_par_ligne'
-	,'label' => __('Number of people per line', 'clicface-trombi') . '<br />'
+	,'label' => __('Number of people per line', 'clicface-trombi')
 	,'value' => 3
 	,'attributes' => array(
 		'class' => 'small-text'

@@ -54,7 +54,7 @@ piklist('field', array(
 	,'field' => 'trombi_display_return_link'
 	,'label' => __('Display a link to the previous page or a link to close the new window (not applicable to ThickBox)', 'clicface-trombi')
 	,'value' => 'non'
-	,'description' => __('A link to the previous page can be displayed on each individual page when it is opened in the same window ; a link to close is displayed when the individual page is opened in a new window.', 'clicface-trombi')
+	,'description' => __('A link to the previous page can be displayed on each Person\'s Profile page when it is opened in the same window ; a link to close is displayed when the Person\'s Profile page is opened in a new window.', 'clicface-trombi')
 	,'choices' => array(
 		'oui' => __('Yes', 'clicface-trombi')
 		,'non' => __('No', 'clicface-trombi')
@@ -66,7 +66,7 @@ piklist('field', array(
 	,'field' => 'trombi_move_to_anchor'
 	,'label' => __('Move the page to the content on each Person\'s Profile page (not applicable to ThickBox)', 'clicface-trombi')
 	,'value' => 'non'
-	,'description' => __('This option is useful when you have a big header on your website and you want to avoid visitors to scroll down to the content on each individual page.', 'clicface-trombi')
+	,'description' => __('This option is useful when you have a big header on your website and you want to avoid visitors to scroll down to the content on each Person\'s Profile page.', 'clicface-trombi')
 	,'choices' => array(
 		'oui' => __('Yes', 'clicface-trombi')
 		,'non' => __('No', 'clicface-trombi')
