@@ -3,7 +3,7 @@
 Plugin Name: Clicface Trombi
 Plugin URI: http://www.clicface.com/
 Description: A great plugin for WordPress that creates a directory of all your employees.
-Version: 1.11
+Version: 1.12
 Author: Clicface
 Author URI: http://www.clicface.com/
 Plugin Type: Piklist
@@ -180,22 +180,13 @@ function trombi_display_views() {
 	$output = '';
 	
 	// query
-	if ( $piklist_version == '0.8.0b1' || '0.8.0b2' || '0.8.0b3' || '0.8.0b4' || '0.8.0b5' || '0.8.0b6' ) {
-		$args = array(
-				'post_type' => 'collaborateur',
-				'posts_per_page' => -1,
-				'orderby' => 'nom',
-				'order' => 'ASC',
-			);
-	} else {
-		$args = array(
-				'post_type' => 'collaborateur',
-				'posts_per_page' => -1,
-				'meta_key' => 'nom',
-				'orderby' => 'meta_value',
-				'order' => 'ASC',
-			);
-	}
+	$args = array(
+			'post_type' => 'collaborateur',
+			'posts_per_page' => -1,
+			'meta_key' => 'nom',
+			'orderby' => 'meta_value',
+			'order' => 'ASC',
+		);
 	$the_query = new WP_Query($args);
 	
 	switch($clicface_trombi_settings['trombi_target_window']) {
