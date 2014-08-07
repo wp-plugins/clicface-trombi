@@ -3,8 +3,8 @@ Contributors: clicface
 Donate link: http://www.clicface.com/
 Tags: online directory, directory, employee, employee list, employees, staff, staff directory, staff list, business directory, member directory, trombinoscope, org chart
 Requires at least: 2.9.2
-Tested up to: 3.8.1
-Stable tag: 1.13
+Tested up to: 3.9.2
+Stable tag: 1.14
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,18 +30,17 @@ Features: (depending on the version)
 * Easy integration
 * Grid or List Display
 * Show employee's details in a new window or a lightbox
-* Custom Colors
+* Custom Styles
 * QR Code
 * Search Function & Exposed Filters
-* Clicface Organi, the Org Chart web application
+* [Clicface Organi, the Org Chart web application](http://wordpress.org/plugins/clicface-organi/)
 
-[youtube http://www.youtube.com/watch?v=6VjluwEd5UM]
+[youtube http://www.youtube.com/watch?v=5_CBm7AN3nQ]
 
 Supported languages:
 
 * English
 * French
-* Vietnamese
 
 == Installation ==
 
@@ -74,7 +73,6 @@ Languages currently available are:
 
 * English
 * French
-* Vietnamese
 
 You can also translate Clicface Trombi in your own language, then submit your translation, so everybody would can use it. To do it, we have [a project hosted at Transifex](https://www.transifex.com/projects/p/clicface-trombi/) where you can add the translation in your language. It’s simple, fast and effective.
 
@@ -90,6 +88,9 @@ If you need help, feel free to contact us using the [Support Ticket System](http
 Screenshots are available on the [Clicface Trombi plugin website](http://www.clicface.com/screenshots).
 
 == Changelog ==
+= 1.14 =
+* Improving style customization
+
 = 1.13 =
 * Fixing employee's title
 * Fixing picture attachment

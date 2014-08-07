@@ -69,6 +69,11 @@
   filter: alpha(opacity=80);
 }
 
+.clicface-trombi-vignette .piklist-label-container a img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .clicface-trombi-table td {
   text-align: center;
   vertical-align: middle;
@@ -78,13 +83,10 @@
 .clicface-trombi-cellule {
   padding: 2px;
   font-size: 13px;
-  border-radius: 8px;
   color: #000000;
   -moz-border-radius: 6px;
   -webkit-border-horizontal-spacing: 0px;
   -webkit-border-vertical-spacing: 0px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.496094) 3px 3px 3px 0px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .clicface-trombi-collaborateur {

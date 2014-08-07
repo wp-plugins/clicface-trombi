@@ -2,7 +2,7 @@
 /*
 Title: How to use Clicface Trombi?
 Setting: clicface_trombi_settings
-Order: 10
+Tab Order: 10
 */
 ?>
 <ol>

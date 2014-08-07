@@ -3,7 +3,7 @@
 Title: Clicface Trombi
 Setting: clicface_trombi_settings
 Tab: Title
-Order: 30
+Tab Order: 30
 */
 
 piklist('field', array(

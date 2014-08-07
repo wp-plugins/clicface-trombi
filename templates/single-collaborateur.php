@@ -5,26 +5,7 @@ $collaborateur = new clicface_Collaborateur( get_the_ID() );
 
 $clicface_trombi_settings = get_option('clicface_trombi_settings');
 
-if ( !isset( $clicface_trombi_settings['vignette_color_border'] ) ) $clicface_trombi_settings['vignette_color_border'] = '#B5D9EA';
-if ( !isset( $clicface_trombi_settings['vignette_color_background_top'] ) ) $clicface_trombi_settings['vignette_color_background_top'] = '#EDF7FF';
-if ( !isset( $clicface_trombi_settings['vignette_color_background_bottom'] ) ) $clicface_trombi_settings['vignette_color_background_bottom'] = '#CDE7EE';
-if ( !isset( $clicface_trombi_settings['trombi_affichage_type'] ) ) $clicface_trombi_settings['trombi_affichage_type'] = 'grid';
-if ( !isset( $clicface_trombi_settings['trombi_display_service'] ) ) $clicface_trombi_settings['trombi_display_service'] = 'oui';
-if ( !isset( $clicface_trombi_settings['trombi_display_phone'] ) ) $clicface_trombi_settings['trombi_display_phone'] = 'non';
-if ( !isset( $clicface_trombi_settings['trombi_display_cellular'] ) ) $clicface_trombi_settings['trombi_display_cellular'] = 'non';
-if ( !isset( $clicface_trombi_settings['trombi_display_email'] ) ) $clicface_trombi_settings['trombi_display_email'] = 'non';
-if ( !isset( $clicface_trombi_settings['trombi_collaborateurs_par_ligne'] ) ) $clicface_trombi_settings['trombi_collaborateurs_par_ligne'] = 3;
-if ( !isset( $clicface_trombi_settings['vignette_width'] ) ) $clicface_trombi_settings['vignette_width'] = 250;
-if ( !isset( $clicface_trombi_settings['trombi_target_window'] ) ) $clicface_trombi_settings['trombi_target_window'] = '_blank';
-if ( !isset( $clicface_trombi_settings['trombi_profile_width'] ) ) $clicface_trombi_settings['trombi_profile_width'] = 720;
-if ( !isset( $clicface_trombi_settings['trombi_profile_height'] ) ) $clicface_trombi_settings['trombi_profile_height'] = 440;
-if ( !isset( $clicface_trombi_settings['trombi_display_worksite'] ) ) $clicface_trombi_settings['trombi_display_worksite'] = 'non';
-if ( !isset( $clicface_trombi_settings['trombi_display_return_link'] ) ) $clicface_trombi_settings['trombi_display_return_link'] = 'non';
-if ( !isset( $clicface_trombi_settings['trombi_move_to_anchor'] ) ) $clicface_trombi_settings['trombi_move_to_anchor'] = 'non';
-if ( !isset( $clicface_trombi_settings['trombi_thickbox_width'] ) ) $clicface_trombi_settings['trombi_thickbox_width'] = 800;
-if ( !isset( $clicface_trombi_settings['trombi_thickbox_height'] ) ) $clicface_trombi_settings['trombi_thickbox_height'] = 670;
-if ( !isset( $clicface_trombi_settings['trombi_title_name_singular'] ) ) $clicface_trombi_settings['trombi_title_name_singular'] = __('Employee', 'clicface-trombi');
-if ( !isset( $clicface_trombi_settings['trombi_title_name_plural'] ) ) $clicface_trombi_settings['trombi_title_name_plural'] = __('Employees', 'clicface-trombi');
+include_once( plugin_dir_path(__FILE__) . '../includes/settings-initialization.php' );
 
 if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 	get_header();
@@ -38,12 +19,8 @@ if ($clicface_trombi_settings['trombi_target_window'] != 'thickbox') {
 	echo '</head>';
 	echo '<body>';
 }
-
-if ( $clicface_trombi_settings['trombi_profile_width'] == NULL ) {
-	$clicface_trombi_settings['trombi_profile_width'] = 720;
-}
-if ( $clicface_trombi_settings['trombi_profile_height'] == NULL ) {
-	$clicface_trombi_settings['trombi_profile_height'] = 440;
+if ( $clicface_trombi_settings['vignette_int_drop_shadow'] == 'oui' ) {
+	echo '<style type="text/css">img.attachment-thumbnail { box-shadow: 2px 2px 12px #555; }</style>';
 }
 ?>
 <div id="content" role="main">
@@ -62,6 +39,12 @@ if ( $clicface_trombi_settings['trombi_profile_height'] == NULL ) {
 
 			<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet" type="text/css" />
 			<style type="text/css">.clicface-trombi-collaborateur-box {width: <?php echo $clicface_trombi_settings['trombi_profile_width']; ?>px; height: <?php echo $clicface_trombi_settings['trombi_profile_height']; ?>px;}</style>
+			<style type="text/css">
+				.clicface-trombi-collaborateur-box {
+				  width: <?php if ( $clicface_trombi_settings['trombi_profile_width_type'] == 'fixed' ) { echo $clicface_trombi_settings['trombi_profile_width_size'] . 'px'; } else { echo '100%'; } ?>;
+				  height: <?php if ( $clicface_trombi_settings['trombi_profile_height_type'] == 'fixed' ) { echo $clicface_trombi_settings['trombi_profile_height_size'] . 'px'; } else { echo 'auto'; } ?>;
+				}
+			</style>
 			<div class="entry-content">
 				<div class="clicface-trombi-collaborateur-contenu  clicface-trombi-collaborateur-box">
 					<table class="clicface-trombi-collaborateur-contenu-table">

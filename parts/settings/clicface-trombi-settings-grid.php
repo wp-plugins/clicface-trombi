@@ -2,7 +2,7 @@
 /*
 Title: Grid Settings (for the Grid display only)
 Setting: clicface_trombi_settings
-Order: 30
+Tab Order: 30
 */
 
 piklist('field', array(

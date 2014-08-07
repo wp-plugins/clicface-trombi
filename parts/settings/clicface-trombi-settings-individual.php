@@ -3,7 +3,7 @@
 Title: Person's Profile
 Setting: clicface_trombi_settings
 Tab: Person's Profile
-Order: 20
+Tab Order: 20
 */
 
 piklist('field', array(
@@ -19,22 +19,56 @@ piklist('field', array(
 ));
 
 piklist('field', array(
-	'type' => 'number'
-	,'field' => 'trombi_profile_width'
-	,'label' => __('Width (in pixels)', 'clicface-trombi')
-	,'value' => 720
-	,'attributes' => array(
-		'class' => 'small-text'
+	'type' => 'radio'
+	,'field' => 'trombi_profile_width_type'
+	,'label' => __('Width type', 'clicface-trombi')
+	,'value' => 'fixed'
+	,'choices' => array(
+		'max' => __('100%', 'clicface-trombi')
+		,'fixed' => __('Fixed size', 'clicface-trombi')
 	)
 ));
 
 piklist('field', array(
 	'type' => 'number'
-	,'field' => 'trombi_profile_height'
+	,'field' => 'trombi_profile_width_size'
+	,'label' => __('Width (in pixels)', 'clicface-trombi')
+	,'value' => 720
+	,'attributes' => array(
+		'class' => 'small-text'
+	)
+	,'conditions' => array(
+		array(
+			'field' => 'trombi_profile_width_type'
+			,'value' => 'fixed'
+		)
+	)
+));
+
+piklist('field', array(
+	'type' => 'radio'
+	,'field' => 'trombi_profile_height_type'
+	,'label' => __('Height type', 'clicface-trombi')
+	,'value' => 'fixed'
+	,'choices' => array(
+		'auto' => __('Auto : fit to content', 'clicface-trombi')
+		,'fixed' => __('Fixed size', 'clicface-trombi')
+	)
+));
+
+piklist('field', array(
+	'type' => 'number'
+	,'field' => 'trombi_profile_height_size'
 	,'label' => __('Height (in pixels)', 'clicface-trombi')
 	,'value' => 440
 	,'attributes' => array(
 		'class' => 'small-text'
+	)
+	,'conditions' => array(
+		array(
+			'field' => 'trombi_profile_height_type'
+			,'value' => 'fixed'
+		)
 	)
 ));
 

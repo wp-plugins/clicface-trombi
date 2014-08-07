@@ -2,7 +2,7 @@
 /*
 Title: Field Settings on the main page
 Setting: clicface_trombi_settings
-Order: 20
+Tab Order: 20
 */
 
 piklist('field', array(

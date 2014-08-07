@@ -16,6 +16,7 @@ class clicface_Collaborateur {
 			if ( isset($collaborateur_service[0]->name) ) {
 				$this->Service = $collaborateur_service[0]->name;
 			} else {
+				$this->ServiceID = NULL;
 				$this->Service = NULL;
 			}
 			
@@ -72,6 +73,8 @@ class clicface_Collaborateur {
 					$this->PhotoThumbnail = '<img src="' . plugins_url( 'img/default_picture.png' , dirname(__FILE__) ) . '" alt="" />';
 				} 
 			}
+			
+			$this->DisplayPagetLink = NULL;
 			
 			$this->Erreur = false;
 			return true;

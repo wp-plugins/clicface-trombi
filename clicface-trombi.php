@@ -3,7 +3,7 @@
 Plugin Name: Clicface Trombi
 Plugin URI: http://www.clicface.com/
 Description: A great plugin for WordPress that creates a directory of all your employees.
-Version: 1.13
+Version: 1.14
 Author: Clicface
 Author URI: http://www.clicface.com/
 Plugin Type: Piklist
@@ -181,26 +181,7 @@ function trombi_display_views() {
 	wp_enqueue_script('jquery-ui-dialog');
 	$output = '';
 	
-	if ( !isset( $clicface_trombi_settings['vignette_color_border'] ) ) $clicface_trombi_settings['vignette_color_border'] = '#B5D9EA';
-	if ( !isset( $clicface_trombi_settings['vignette_color_background_top'] ) ) $clicface_trombi_settings['vignette_color_background_top'] = '#EDF7FF';
-	if ( !isset( $clicface_trombi_settings['vignette_color_background_bottom'] ) ) $clicface_trombi_settings['vignette_color_background_bottom'] = '#CDE7EE';
-	if ( !isset( $clicface_trombi_settings['trombi_affichage_type'] ) ) $clicface_trombi_settings['trombi_affichage_type'] = 'grid';
-	if ( !isset( $clicface_trombi_settings['trombi_display_service'] ) ) $clicface_trombi_settings['trombi_display_service'] = 'oui';
-	if ( !isset( $clicface_trombi_settings['trombi_display_phone'] ) ) $clicface_trombi_settings['trombi_display_phone'] = 'non';
-	if ( !isset( $clicface_trombi_settings['trombi_display_cellular'] ) ) $clicface_trombi_settings['trombi_display_cellular'] = 'non';
-	if ( !isset( $clicface_trombi_settings['trombi_display_email'] ) ) $clicface_trombi_settings['trombi_display_email'] = 'non';
-	if ( !isset( $clicface_trombi_settings['trombi_collaborateurs_par_ligne'] ) ) $clicface_trombi_settings['trombi_collaborateurs_par_ligne'] = 3;
-	if ( !isset( $clicface_trombi_settings['vignette_width'] ) ) $clicface_trombi_settings['vignette_width'] = 250;
-	if ( !isset( $clicface_trombi_settings['trombi_target_window'] ) ) $clicface_trombi_settings['trombi_target_window'] = '_blank';
-	if ( !isset( $clicface_trombi_settings['trombi_profile_width'] ) ) $clicface_trombi_settings['trombi_profile_width'] = 720;
-	if ( !isset( $clicface_trombi_settings['trombi_profile_height'] ) ) $clicface_trombi_settings['trombi_profile_height'] = 440;
-	if ( !isset( $clicface_trombi_settings['trombi_display_worksite'] ) ) $clicface_trombi_settings['trombi_display_worksite'] = 'non';
-	if ( !isset( $clicface_trombi_settings['trombi_display_return_link'] ) ) $clicface_trombi_settings['trombi_display_return_link'] = 'non';
-	if ( !isset( $clicface_trombi_settings['trombi_move_to_anchor'] ) ) $clicface_trombi_settings['trombi_move_to_anchor'] = 'non';
-	if ( !isset( $clicface_trombi_settings['trombi_thickbox_width'] ) ) $clicface_trombi_settings['trombi_thickbox_width'] = 800;
-	if ( !isset( $clicface_trombi_settings['trombi_thickbox_height'] ) ) $clicface_trombi_settings['trombi_thickbox_height'] = 670;
-	if ( !isset( $clicface_trombi_settings['trombi_title_name_singular'] ) ) $clicface_trombi_settings['trombi_title_name_singular'] = __('Employee', 'clicface-trombi');
-	if ( !isset( $clicface_trombi_settings['trombi_title_name_plural'] ) ) $clicface_trombi_settings['trombi_title_name_plural'] = __('Employees', 'clicface-trombi');
+	include_once( dirname( __FILE__ ) . '/includes/settings-initialization.php' );
 	
 	// query
 	$args = array(
@@ -269,7 +250,13 @@ function trombi_display_views() {
 		
 		default: //grid
 			$i = 1;
-			$output .= '<style type="text/css">.clicface-trombi-cellule {width: ' . $clicface_trombi_settings['vignette_width'] . 'px; background-color: ' . $clicface_trombi_settings['vignette_color_background_top'] . '; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(' . $clicface_trombi_settings['vignette_color_background_top'] . '), to(' . $clicface_trombi_settings['vignette_color_background_bottom'] . ')); border: 2px solid ' . $clicface_trombi_settings['vignette_color_border'] . ';}</style>';
+			$output .= '<style type="text/css">.clicface-trombi-cellule {width: ' . $clicface_trombi_settings['vignette_width'] . 'px; background-color: ' . $clicface_trombi_settings['vignette_color_background_top'] . '; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(' . $clicface_trombi_settings['vignette_color_background_top'] . '), to(' . $clicface_trombi_settings['vignette_color_background_bottom'] . ')); border: ' . $clicface_trombi_settings['vignette_border_thickness'] . 'px solid ' . $clicface_trombi_settings['vignette_color_border'] . ' !important; border-radius: ' . $clicface_trombi_settings['vignette_border_radius'] . 'px;}</style>';
+			if ( $clicface_trombi_settings['vignette_ext_drop_shadow'] == 'oui' ) {
+				$output .= '<style type="text/css">.clicface-trombi-cellule { box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }</style>';
+			}
+			if ( $clicface_trombi_settings['vignette_int_drop_shadow'] == 'oui' ) {
+				$output .= '<style type="text/css">.clicface-trombi-vignette .piklist-label-container a img { box-shadow: 2px 2px 12px #555; }</style>';
+			}
 			$output .= '<table class="clicface-trombi-table">';
 			$output .= '<tr>';
 			while ( $the_query->have_posts() ) : $the_query->the_post();
