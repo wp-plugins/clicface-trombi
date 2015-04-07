@@ -1,5 +1,6 @@
 .clicface-trombi-person-name {
   font-weight: bold;
+  padding-top: 10px;
 }
 
 .clicface-trombi-person-name-individual-page {
@@ -20,7 +21,7 @@
 }
 
 .clicface-trombi-person-service {
-
+  
 }
 
 .clicface-trombi-person-service-individual-page {
@@ -43,9 +44,18 @@
   padding: 4px;
 }
 
+.clicface-trombi-current-page {
+  font-weight: bold;
+  color: red;
+}
+
 
 /* DO NOT EDIT THIS PART! */
-.clicface-trombi-table{
+#TB_window .screen-reader-text {
+  display: none;
+}
+
+.clicface-trombi-table {
   border: none !important;
   margin: 3px;
   border-collapse: separate;
@@ -57,9 +67,15 @@
   border: none !important;
   margin: 3px;
   box-shadow: none;
-  display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.clicface-trombi-image-grid li {
+  margin: 10px 0 0 10px;
+  float: left;
+  text-align: center;
+  overflow: hidden;
 }
 
 .clicface-trombi-vignette:hover {
@@ -71,13 +87,12 @@
 
 .clicface-trombi-vignette .piklist-label-container a img {
   margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .clicface-trombi-table td {
   text-align: center;
   vertical-align: middle;
-  padding: 0px;
+  padding: 5px;
 }
 
 .clicface-trombi-cellule {
